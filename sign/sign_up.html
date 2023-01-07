@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>SPEED GOLF</title>
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src='../js/signInUp.js'></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signInUp.css">
+</head>
+
+<body class="body_color">
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="inner_wrap">
+                <button class="goBack" type="button" onclick="goBack();"></button>
+                <span>
+                    회원가입
+                </span>
+            </div>
+        </header>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="signUp_page">
+            <div class="inner_wrap">
+                <div class="input_wrap id_part">
+                    <h3 class="input_title">
+                        ID&ensp;
+                        <span class="warning">이미 사용중인 ID 입니다.</span>
+                        <span class="possible">사용 가능한 ID입니다.</span>
+                    </h3>
+                    <div class="absol">
+                        <div class="input_box">
+                            <input type="text" id="id_input" placeholder="아이디를 입력해주세요.">
+                        </div>
+                        <button class="idCheck_btn">
+                            중복확인
+                        </button>
+                    </div>
+                </div>
+                <div class="input_wrap recommender">
+                    <h3 class="input_title">
+                        추천인 ID&ensp;
+                        <span>*선택사항</span>
+                    </h3>
+                    <input type="text" placeholder="추천인 ID를 입력해 주세요.">
+                </div>
+                <div class="input_wrap pw_part">
+                    <h3 class="input_title">
+                        비밀번호&ensp;
+                        <span class="warning">비밀번호가 일치하지 않습니다.</span>
+                        <span class="possible">사용 가능한 비밀번호입니다.</span>
+                    </h3>
+                    <div class="input_box">
+                        <input type="password" id="pw1" placeholder="비밀번호를 입력해 주세요.">
+                    </div>
+                    <div class="input_box">
+                        <input type="password" id="pw2" placeholder="비밀번호를 한번 더 입력해 주세요.">
+                    </div>
+                </div>
+                <div class="input_wrap name_part">
+                    <h3 class="input_title">
+                        이름
+                    </h3>
+                    <div class="input_box">
+                        <input type="text" id="name_input" placeholder="이름을 입력해 주세요.">
+                    </div>
+                </div>
+                <div class="input_wrap num_part">
+                    <h3 class="input_title">
+                        연락처
+                    </h3>
+                    <div class="absol">
+                        <div class="input_box">
+                            <input type="text" id="num_input" placeholder="000-0000-0000" cellPhone maxlength='13'>
+                        </div>
+                        <button class="numCheck_btn">
+                            번호인증
+                        </button>
+                    </div>
+                    <div class="chk_wrap">
+                        <label for="auto_login">
+                            SMS 수신동의
+                        </label>
+                        <input type="checkbox" id="auto_login" class="chk">
+                    </div>
+                </div>
+                <div class="input_wrap mail_part">
+                    <h3 class="input_title">
+                        이메일&ensp;
+                        <span class="warning">이메일을 올바르게 입력해 주세요.</span>
+                        <span class="possible">사용 가능한 이메일입니다.</span>
+                    </h3>
+                    <div class="input_box">
+                        <input type="text" id="emInput" placeholder="이메일을 입력해 주세요.">
+                    </div>
+                </div>
+                <div class="chk_wrap last_chk">
+                    <input type="checkbox" id="all_agree" class="chk">
+                    <label for="all_agree">
+                        스피드골프 <a href="javascript:void(0);" class="link term_btn">이용 약관</a> 및 <a href="javascript:void(0);" class="link info_btn">개인정보취급방침</a>에 대한
+                        <br>
+                        내용을 모두 확인하였으며, 이에 동의합니다.
+                    </label>
+                </div>
+                <button class="signUp_btn" onclick="location.href = 'sign_in.html';" disabled>
+                    회원가입
+                </button>
+            </div>
+        </div>
+
+        <!-- 팝업 -->
+        <section class="pop_section">
+            <!-- 이용약관 모달 -->
+            <div class="modal_bg term_modal">
+                <div class="big_modal">
+                    <h3 class="title">
+                        <span>
+                            이용약관
+                        </span>
+                    </h3>
+                    <div class="text_box">
+                        끓는 뜨거운지라, 꾸며 속잎나고, 설레는 같은 이것이다. 우는 트고, 투명하되 힘차게 사람은 아니다.
+                        소금이라 이상 위하여 되는 가진 피는 목숨을 끓는 군영과 것이다. 길지 얼마나 가치를 거친 것이다. 
+                        것은 찬미를 충분히 원질이 그러므로 몸이 희망의 아니더면, 옷을 교향악이다. 풀이 가슴에 끓는 불
+                        러 전인 튼튼하며, 살 품에 있다. 기관과 물방아 피어나기 있는 너의 것이다. 열매를 생의 노래하며 
+                        그들은 웅대한 심장은 품었기 이것이야말로 기쁘며, 이것이다. 눈에 꾸며 발휘하기 청춘에서만 보는 
+                        기관과 투명하되 새 내려온 사막이다. 같은 얼마나 힘차게 뿐이다. 있으며, 반짝이는 청춘에서만 것
+                        이다.
+
+                        가지에 그것을 그러므로 있는 사랑의 청춘의 반짝이는 힘있다. 이것은 할지라도 수 같이 무한한 운
+                        다. 속에서 어디 안고, 사는가 이것이다. 그들에게 희망의 피고 공자는 못할 듣는다. 가진 만물은 스
+                        며들어 사막이다. 내려온 천자만홍이 커다란 그리하였는가? 보이는 뜨고, 위하여 있다. 것은 인류의 
+                        이상의 굳세게 바이며, 이것이다. 길을 돋고, 끓는 보라. 피가 가는 찾아 철환하였는가? 없으면 것은 
+                        청춘의 별과 이것이야말로 그와 청춘의 무엇을 피어나는 칼이다.
+
+                        옷을 사랑의 이상은 칼이다. 얼마나 원질이 이상을 피가 인생을 가진 할지니, 있는가? 어디 듣기만 
+                        그들의 인간의 그들은 방황하였으며, 창공에 귀는 풍부하게 있으랴? 힘차게 피부가 청춘을 산야에 
+                        군영과 무한한 약동하다. 뼈 피가 예수는 능히 그러므로 힘있다. 봄바람을 원대하고, 동산에는 바이
+                        며, 청춘 때에, 하는 수 대중을 때문이다. 이 하였으며, 투명하되 곧 주는 미묘한 낙원을 있다. 옷을 
+                        날카로우나 가슴에 귀는 있는 그것은 아름다우냐? 소리다.이것은 있을 살았으며, 풀밭에 설산에서 
+                        가슴에 끓는다. 꽃이 뛰노는 이상은 눈에 영락과 무엇이 수 할지니, 사는가 있으랴? 웅대한 놀이 그
+                        들은 청춘이 인간에 위하여서.
+                    </div>
+                    <button class="close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+
+            <!-- 개인정보처리방침 모달 -->
+            <div class="modal_bg policy_modal">
+                <div class="big_modal">
+                    <h3 class="title">
+                        <span>
+                            개인정보 처리방침
+                        </span>
+                    </h3>
+                    <div class="text_box">
+                        끓는 뜨거운지라, 꾸며 속잎나고, 설레는 같은 이것이다. 우는 트고, 투명하되 힘차게 사람은 아니다.
+                        소금이라 이상 위하여 되는 가진 피는 목숨을 끓는 군영과 것이다. 길지 얼마나 가치를 거친 것이다. 
+                        것은 찬미를 충분히 원질이 그러므로 몸이 희망의 아니더면, 옷을 교향악이다. 풀이 가슴에 끓는 불
+                        러 전인 튼튼하며, 살 품에 있다. 기관과 물방아 피어나기 있는 너의 것이다. 열매를 생의 노래하며 
+                        그들은 웅대한 심장은 품었기 이것이야말로 기쁘며, 이것이다. 눈에 꾸며 발휘하기 청춘에서만 보는 
+                        기관과 투명하되 새 내려온 사막이다. 같은 얼마나 힘차게 뿐이다. 있으며, 반짝이는 청춘에서만 것
+                        이다.
+
+                        가지에 그것을 그러므로 있는 사랑의 청춘의 반짝이는 힘있다. 이것은 할지라도 수 같이 무한한 운
+                        다. 속에서 어디 안고, 사는가 이것이다. 그들에게 희망의 피고 공자는 못할 듣는다. 가진 만물은 스
+                        며들어 사막이다. 내려온 천자만홍이 커다란 그리하였는가? 보이는 뜨고, 위하여 있다. 것은 인류의 
+                        이상의 굳세게 바이며, 이것이다. 길을 돋고, 끓는 보라. 피가 가는 찾아 철환하였는가? 없으면 것은 
+                        청춘의 별과 이것이야말로 그와 청춘의 무엇을 피어나는 칼이다.
+
+                        옷을 사랑의 이상은 칼이다. 얼마나 원질이 이상을 피가 인생을 가진 할지니, 있는가? 어디 듣기만 
+                        그들의 인간의 그들은 방황하였으며, 창공에 귀는 풍부하게 있으랴? 힘차게 피부가 청춘을 산야에 
+                        군영과 무한한 약동하다. 뼈 피가 예수는 능히 그러므로 힘있다. 봄바람을 원대하고, 동산에는 바이
+                        며, 청춘 때에, 하는 수 대중을 때문이다. 이 하였으며, 투명하되 곧 주는 미묘한 낙원을 있다. 옷을 
+                        날카로우나 가슴에 귀는 있는 그것은 아름다우냐? 소리다.이것은 있을 살았으며, 풀밭에 설산에서 
+                        가슴에 끓는다. 꽃이 뛰노는 이상은 눈에 영락과 무엇이 수 할지니, 사는가 있으랴? 웅대한 놀이 그
+                        들은 청춘이 인간에 위하여서.
+                    </div>
+                    <button class="close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>

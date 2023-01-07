@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>SPEED GOLF</title>
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src='../js/notice.js'></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/notice.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="inner_wrap">
+                <button class="goBack" type="button" onclick="goBack();"></button>
+                <span>
+                    문의사항
+                </span>
+            </div>
+        </header>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="service_section inquiry_product_wrap bg_gray">
+            <div class="inner_wrap">
+                <!-- 스코어카드 영상 섹션 -->
+                <section class="section head_office">
+                    <div class="service_cont product_bg">
+                        <div class="head_product_title">
+                            <span>작성자 2022.05.13</span>
+                            <p>문의 제목이 들어갑니다</p>
+                        </div>
+                        <div class="inquiry_text">
+                            <p>문의사항 내용이 들어갑니다.</p>
+                        </div>
+                        <!-- 답변 있으면 활성화 -->
+                        <div class="inquiry_re">
+                            <span>관리자 2022.05.13</span>
+                            <p>문의사항 내용이 들어갑니다.</p>
+                        </div>
+                        <div class="btn_group">
+                            <button class="tresh_btn btn reverse">문의 삭제</button>
+                            <button class="btn" type="button" onclick="location.href='inquiry.html'">문의 수정</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="pop_section">
+                    <div class="modal_bg inquiry_modal1">
+                        <div class="message_modal">
+                            <div class="text_area">
+                                <div class="align_text">
+                                    <h3 class="big_text">
+                                        문의를 삭제하시겠습니까?
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="cancel_btn close_btn">
+                                    취소
+                                </button>
+                                <button class="apply_btn first_apply">
+                                    확인
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_bg inquiry_modal2">
+                        <div class="message_modal">
+                            <div class="text_area">
+                                <div class="align_text">
+                                    <h3 class="big_text">
+                                        문의가 삭제되었습니다.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="apply_btn full last_apply" type="button" onclick="location.href='inquiries.html'">
+                                    확인
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 네비게이션 -->
+        <nav>
+            <div class="inner_wrap">
+                <ul class="depth">
+                    <li class="list" onclick="location.href='../main/main.html'">
+                        <div class="icon_img home"></div>
+                        <span>
+                            홈
+                        </span>
+                    </li>
+                    <li class="list reservation" onclick="location.href='../reservation/rez_store_find.html'">
+                        <div class="icon_img reservation"></div>
+                        <span>
+                            예약
+                        </span>
+                    </li>
+                    <li class="list card_video" onclick="location.href='../score_video/score.html'">
+                        <div class="icon_img card_video"></div>
+                        <span>
+                            스코어카드 & 영상
+                        </span>
+                    </li>
+                    <li class="list find_store" onclick="location.href='../search/store_find.html'">
+                        <div class="icon_img find_store"></div>
+                        <span>
+                            매장찾기
+                        </span>
+                    </li>
+                    <li class="list more_view" onclick="location.href='../mypage/mypage_main.html'">
+                        <div class="icon_img more_view focus"></div>
+                        <span>
+                            더보기
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

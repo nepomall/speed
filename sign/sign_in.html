@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>SPEED GOLF</title>
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src='../js/signInUp.js'></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signInUp.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="signInMain_page">
+            <div class="inner_wrap">
+                <div class="top_area">
+                    <div class="big_logo">
+                        <img src="../img/common/big_logo.svg" alt="">
+                    </div>
+                    <div class="signIn_wrap">
+                        <input type="text" placeholder="아이디">
+                        <input type="password" placeholder="비밀번호">
+                        <div class="extra_option">
+                            <a href="id_find.html" class="link">
+                                아이디/비밀번호 찾기
+                            </a>
+                            <div class="chk_wrap">
+                                <input type="checkbox" id="auto_login" class="chk">
+                                <label for="auto_login">
+                                    자동로그인
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_wrap">
+                    <button class="signIn_btn">
+                        로그인
+                    </button>
+                    <button class="signUp_btn" onclick="location.href = 'sign_up.html';">
+                        회원가입
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 팝업 -->
+        <section class="pop_section">
+            <!-- id, 비밀번호 입력 -->
+            <div class="toast_pop plzWrite">
+                <span>
+                    ID, 비밀번호를 입력해주세요.
+                </span>
+            </div>
+            <!-- id, 비밀번호 확인 -->
+            <div class="toast_pop plzChking">
+                <span>
+                    ID 또는 비밀번호를 확인해주세요.
+                </span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

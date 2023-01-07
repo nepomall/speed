@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="그룹_28159" data-name="그룹 28159" transform="translate(-193 -2022.827)">
+    <rect id="사각형_30862" data-name="사각형 30862" width="44" height="44" transform="translate(193 2022.827)" fill="rgba(204,18,25,0.2)" opacity="0"/>
+    <g id="그룹_27872" data-name="그룹 27872" transform="translate(2456.5 112.812)">
+      <g id="그룹_27869" data-name="그룹 27869" transform="translate(-2257.5 1921.016)">
+        <path id="패스_66220" data-name="패스 66220" d="M24.748,3H5.718C4.223,3,3,3.923,3,5.051V19.408c0,1.128,1.223,2.051,2.718,2.051H24.748c1.5,0,2.718-.923,2.718-2.051V5.051C27.466,3.923,26.243,3,24.748,3Z" transform="translate(-3 -3)" fill="#fff" stroke="#000" stroke-width="1"/>
+        <path id="_290104_calendar_clock_date_event_schedule_icon" data-name="290104_calendar_clock_date_event_schedule_icon" d="M4.77,20.587H3.706a.523.523,0,0,1-.532-.515v-1.03a.523.523,0,0,1,.532-.515H4.77a.523.523,0,0,1,.532.515v1.03A.523.523,0,0,1,4.77,20.587Zm0-3.606H3.706a.523.523,0,0,1-.532-.515v-1.03a.524.524,0,0,1,.532-.515H4.77a.524.524,0,0,1,.532.515v1.03A.523.523,0,0,1,4.77,16.982Z" transform="translate(-0.116 -7.034)" fill-rule="evenodd"/>
+      </g>
+      <g id="그룹_27871" data-name="그룹 27871" transform="translate(-2250.966 1926.557)">
+        <g id="그룹_27870" data-name="그룹 27870">
+          <path id="패스_66220-2" data-name="패스 66220" d="M24.748,3H5.718C4.223,3,3,3.923,3,5.051V19.408c0,1.128,1.223,2.051,2.718,2.051H24.748c1.5,0,2.718-.923,2.718-2.051V5.051C27.466,3.923,26.243,3,24.748,3Z" transform="translate(-3 -3)" fill="#fff" stroke="#000" stroke-width="1"/>
+        </g>
+        <g id="사각형_30866" data-name="사각형 30866" transform="translate(5.505 6.097)" fill="#fff" stroke="#000" stroke-width="1">
+          <rect width="3.67" height="8.563" rx="1.835" stroke="none"/>
+          <rect x="0.5" y="0.5" width="2.67" height="7.563" rx="1.335" fill="none"/>
+        </g>
+        <g id="사각형_30867" data-name="사각형 30867" transform="translate(10.398 3.65)" fill="#fff" stroke="#000" stroke-width="1">
+          <rect width="3.67" height="11.01" rx="1.835" stroke="none"/>
+          <rect x="0.5" y="0.5" width="2.67" height="10.01" rx="1.335" fill="none"/>
+        </g>
+        <g id="사각형_30868" data-name="사각형 30868" transform="translate(15.291 7.32)" fill="#fff" stroke="#000" stroke-width="1">
+          <rect width="3.67" height="7.34" rx="1.835" stroke="none"/>
+          <rect x="0.5" y="0.5" width="2.67" height="6.34" rx="1.335" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="86" viewBox="0 0 86 86">
+  <defs>
+    <filter id="타원_390" x="0" y="0" width="86" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_28085" data-name="그룹 28085" transform="translate(-36 -449)">
+    <g id="그룹_17756" data-name="그룹 17756" transform="translate(45 455)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#타원_390)">
+        <circle id="타원_390-2" data-name="타원 390" cx="34" cy="34" r="34" transform="translate(9 6)" fill="#f7f7f7"/>
+      </g>
+    </g>
+    <g id="_5402435_account_profile_user_avatar_man_icon" data-name="5402435_account_profile_user_avatar_man_icon" transform="translate(68 476.805)">
+      <circle id="타원_391" data-name="타원 391" cx="5.5" cy="5.5" r="5.5" transform="translate(6.195 0.195)" fill="#464646"/>
+      <path id="패스_50049" data-name="패스 50049" d="M26.805,21.552v1.425A1.425,1.425,0,0,1,25.38,24.4H5.425A1.425,1.425,0,0,1,4,22.977V21.552A8.552,8.552,0,0,1,12.552,13h5.7A8.552,8.552,0,0,1,26.805,21.552Z" transform="translate(-4 -0.172)" fill="#464646"/>
+    </g>
+  </g>
+</svg>

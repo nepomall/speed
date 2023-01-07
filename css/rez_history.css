@@ -1,0 +1,79 @@
+/* 예약내역 페이지---------------------------------------------------------------------*/
+/* 예약내역 페이지---------------------------------------------------------------------*/
+.rez_history_page .history_wrap{
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_history_page .history_wrap .empty_box{
+    padding: calc(100vw*(130/428)) 0 calc(100vw* (180/428));
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+    text-align: center;
+    font-weight: 500;
+}
+
+.rez_history_page .history_wrap .empty_box{
+    display: none;
+}
+
+.rez_history_page .store_list .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    padding: calc(100vw*(20/428));
+}
+
+.rez_history_page .store_list .list:not(:last-child){
+    margin-bottom: calc(100vw*(20/428));
+}
+
+.rez_history_page .store_list .name{
+    font-size: calc(100vw*(15/428));
+    margin: calc(100vw*(20/428)) 0 calc(100vw* (10/428));
+    font-weight: 500;
+}
+
+.rez_history_page .store_list .date{
+    font-size: calc(100vw*(16/428));
+    color: #acacac;
+    font-weight: 500;
+}
+
+.rez_history_page .store_list .point{
+    font-size: calc(100vw*(16/428));
+    font-weight: 500;
+}
+
+.rez_history_page .store_list .point span{
+    color: #E5434A;
+}
+
+.rez_history_page .store_list .point.plus span{
+    color: #214BFF;
+}
+
+.rez_history_page .store_list .address{
+    font-size: calc(100vw* (14/428));
+    font-weight: 400;
+    color: #444;
+}
+
+.rez_history_page .store_list .rez_type{
+    font-size: calc(100vw* (14/428));
+    font-weight: 500;
+}
+
+.rez_history_page .store_list .rez_type.rez_c{
+    color: #214BFF;
+}
+
+.rez_history_page .store_list .rez_type.use_c{
+    color: #ACACAC;
+}
+
+.rez_history_page .store_list .rez_type.rez_cancel{
+    color: #E5434A;
+}

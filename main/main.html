@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>SPEED GOLF</title>
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src='../js/main.js'></script>
+    <script src="../js/chart.min.js"></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header class="main_header">
+            <div class="inner_wrap">
+                <h1 class="logo">
+                    <img src="../img/common/logo.svg" alt="">
+                </h1>
+            </div>
+        </header>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="main_page bg_gray">
+            <div class="inner_wrap">
+                <!-- 상단 메인섹션 -->
+                <section class="section main_section">
+                    <!-- 이름 -->
+                    <div class="name_box">
+                        <div class="text">
+                            <h3>
+                                <span>***님</span> 환영합니다 !
+                            </h3>
+                            <p>
+                                약동하다. 이상 보는 것은 길을 이는
+                                <br>
+                                미인을 속에 아니다.
+                            </p>
+                        </div>
+                        <div class="img_box">
+                            <img src="../img/main/main_img.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- 포인트 -->
+                    <div class="point_box">
+                        <p class="text">
+                            내 포인트
+                        </p>
+                        <p class="num">
+                            <span>999</span> P
+                        </p>
+                    </div>
+
+                    <!-- 이동버튼 -->
+                    <div class="link_wrap">
+                        <div class="goReser_btn main_btn" onclick="location.href='../reservation/reservation.html'">
+                            <div class="icon_box">
+                                <img src="../img/main/icon_reservation.svg" alt="">
+                            </div>
+                            <span>
+                                예약하기
+                            </span>
+                        </div>
+                        <div class="goPoint_btn main_btn" onclick="location.href='../cash/point_charging.html'">
+                            <div class="icon_box">
+                                <img src="../img/main/icon_point.svg" alt="">
+                            </div>
+                            <span>
+                                포인트충전
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 메인배너 -->
+                    <div class="event_banner" onclick="location.href='../mypage/my_event.html'">
+                        <h3 class="title">
+                            EVENT BANNER TEXT
+                        </h3>
+                        <p>
+                            EVENT BANNER TEXT
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 스코어카드 영상 섹션 -->
+                <section class="section cardVideo_section">
+                    <!-- 스코어 카드, 영상 -->
+                    <div class="content_box">
+                        <div class="title_box">
+                            <h3 class="title">
+                                스코어 카드 & 영상
+                            </h3>
+                            <a href="../score_video/score.html" class="link">
+                                더보기
+                            </a>
+                        </div>
+                        <div class="canvas_wrap">
+                            <ul class="depth">
+                                <li class="list">
+                                    <p class="text">
+                                        최고스코어
+                                    </p>
+                                    <p class="num">
+                                        <span>99</span>
+                                    </p>
+                                </li>
+                                <li class="list">
+                                    <p class="text">
+                                        최대피팅거리
+                                    </p>
+                                    <p class="num">
+                                        <span>7</span>m
+                                    </p>
+                                </li>
+                                <li class="list">
+                                    <p class="text">
+                                        최고스코어
+                                    </p>
+                                    <p class="num">
+                                        <span>180</span>m
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="canvas_box">
+                                <canvas id="radar-chart"
+                                    style="width: calc(100vw*(350/428));height: calc(100vw*(350/428));"></canvas>
+                                <span class="labels_data hit">8</span>
+                                <span class="labels_data driver">80m</span>
+                                <span class="labels_data green">80%</span>
+                                <span class="labels_data power">80%</span>
+                                <span class="labels_data putting">8</span>
+                            </div>
+                            <div class="canvas_bg">
+                                <span>
+                                    기록이 없습니다.
+                                    <br>
+                                    게임을 진행하여 기록을 확인해보세요 !
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 스윙영상 보기 -->
+                    <div class="content_box">
+                        <div class="title_box">
+                            <h3 class="title">
+                                스윙영상 보기
+                            </h3>
+                            <a href="../score_video/video_swing.html" class="link">
+                                더보기
+                            </a>
+                        </div>
+                        <div class="video_wrap">
+                            <div class="empty_box">
+                                레슨 영상이 없습니다.
+                            </div>
+                            <ul class="depth">
+                                <li class="list" onclick="location.href = '../score_video/video_detail.html';">
+                                    <div class="button_bg">
+                                        <div class="play_icon"></div>
+                                    </div>
+                                </li>
+                                <li class="list" onclick="location.href = '../score_video/video_detail.html';">
+                                    <div class="button_bg">
+                                        <div class="play_icon"></div>
+                                    </div>
+                                </li>
+                                <li class="list" onclick="location.href = '../score_video/video_detail.html';">
+                                    <div class="button_bg">
+                                        <div class="play_icon"></div>
+                                    </div>
+                                </li>
+                                <li class="list" onclick="location.href = '../score_video/video_detail.html';">
+                                    <div class="button_bg">
+                                        <div class="play_icon"></div>
+                                    </div>
+                                </li>
+                                <li class="list" onclick="location.href = '../score_video/video_detail.html';">
+                                    <div class="button_bg">
+                                        <div class="play_icon"></div>
+                                    </div>
+                                </li>
+                                <li class="list" onclick="location.href = '../score_video/video_detail.html';">
+                                    <div class="button_bg">
+                                        <div class="play_icon"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 매장찾기 섹션 -->
+                <section class="section storeFind_section">
+                    <div class="content_box">
+                        <div class="title_box">
+                            <h3 class="title">
+                                매장찾기
+                            </h3>
+                            <a href="../search/store_find.html" class="link">
+                                더보기
+                            </a>
+                        </div>
+                        <div class="tab_wrap">
+                            <div class="tabs">
+                                <div class="tab">
+                                    전체매장
+                                </div>
+                                <div class="tab">
+                                    즐겨찾는 매장
+                                </div>
+                            </div>
+                            <div class="contents">
+                                <ul class="depth content all_store">
+                                    <li class="list">
+                                        <div class="somenail_box"
+                                            onclick="location.href='../search/storeFind_detail.html'">
+                                            <img src="../img/common/store_somenail.png" alt="">
+                                        </div>
+                                        <div class="text_box" onclick="location.href='../search/storeFind_detail.html'">
+                                            <h4 class="store_name">
+                                                스피드골프 강남 1호점 HD
+                                            </h4>
+                                            <p class="address">
+                                                서울특별시 강남구 선릉로 123
+                                            </p>
+                                            <p class="number">
+                                                02-123-1234
+                                            </p>
+                                        </div>
+                                        <div class="fav_icon"></div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="somenail_box"
+                                            onclick="location.href='../search/storeFind_detail.html'">
+                                            <img src="../img/common/store_somenail.png" alt="">
+                                        </div>
+                                        <div class="text_box" onclick="location.href='../search/storeFind_detail.html'">
+                                            <h4 class="store_name">
+                                                스피드골프 강남 1호점 HD
+                                            </h4>
+                                            <p class="address">
+                                                서울특별시 강남구 선릉로 123
+                                            </p>
+                                            <p class="number">
+                                                02-123-1234
+                                            </p>
+                                        </div>
+                                        <div class="fav_icon"></div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="somenail_box"
+                                            onclick="location.href='../search/storeFind_detail.html'">
+                                            <img src="../img/common/store_somenail.png" alt="">
+                                        </div>
+                                        <div class="text_box" onclick="location.href='../search/storeFind_detail.html'">
+                                            <h4 class="store_name">
+                                                스피드골프 강남 1호점 HD
+                                            </h4>
+                                            <p class="address">
+                                                서울특별시 강남구 선릉로 123
+                                            </p>
+                                            <p class="number">
+                                                02-123-1234
+                                            </p>
+                                        </div>
+                                        <div class="fav_icon"></div>
+                                    </li>
+                                </ul>
+                                <ul class="depth content fav_store">
+                                    <li class="list">
+                                        <div class="somenail_box"
+                                            onclick="location.href='../search/storeFind_detail.html'">
+                                            <img src="../img/common/store_somenail.png" alt="">
+                                        </div>
+                                        <div class="text_box" onclick="location.href='../search/storeFind_detail.html'">
+                                            <h4 class="store_name">
+                                                스피드골프 강남 2호점 HD
+                                            </h4>
+                                            <p class="address">
+                                                서울특별시 강남구 선릉로 123
+                                            </p>
+                                            <p class="number">
+                                                02-123-1234
+                                            </p>
+                                        </div>
+                                        <div class="fav_icon"></div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="somenail_box"
+                                            onclick="location.href='../search/storeFind_detail.html'">
+                                            <img src="../img/common/store_somenail.png" alt="">
+                                        </div>
+                                        <div class="text_box" onclick="location.href='../search/storeFind_detail.html'">
+                                            <h4 class="store_name">
+                                                스피드골프 강남 2호점 HD
+                                            </h4>
+                                            <p class="address">
+                                                서울특별시 강남구 선릉로 123
+                                            </p>
+                                            <p class="number">
+                                                02-123-1234
+                                            </p>
+                                        </div>
+                                        <div class="fav_icon"></div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="somenail_box"
+                                            onclick="location.href='../search/storeFind_detail.html'">
+                                            <img src="../img/common/store_somenail.png" alt="">
+                                        </div>
+                                        <div class="text_box" onclick="location.href='../search/storeFind_detail.html'">
+                                            <h4 class="store_name">
+                                                스피드골프 강남 2호점 HD
+                                            </h4>
+                                            <p class="address">
+                                                서울특별시 강남구 선릉로 123
+                                            </p>
+                                            <p class="number">
+                                                02-123-1234
+                                            </p>
+                                        </div>
+                                        <div class="fav_icon"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 네비게이션 -->
+        <nav>
+            <div class="inner_wrap">
+                <ul class="depth">
+                    <li class="list" onclick="location.href='../main/main.html'">
+                        <div class="icon_img home focus"></div>
+                        <span>
+                            홈
+                        </span>
+                    </li>
+                    <li class="list reservation" onclick="location.href='../reservation/rez_store_find.html'">
+                        <div class="icon_img reservation"></div>
+                        <span>
+                            예약
+                        </span>
+                    </li>
+                    <li class="list card_video" onclick="location.href='../score_video/score.html'">
+                        <div class="icon_img card_video"></div>
+                        <span>
+                            스코어카드 & 영상
+                        </span>
+                    </li>
+                    <li class="list find_store" onclick="location.href='../search/store_find.html'">
+                        <div class="icon_img find_store"></div>
+                        <span>
+                            매장찾기
+                        </span>
+                    </li>
+                    <li class="list more_view" onclick="location.href='../mypage/mypage_main.html'">
+                        <div class="icon_img more_view"></div>
+                        <span>
+                            더보기
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

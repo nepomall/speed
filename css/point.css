@@ -1,0 +1,281 @@
+@charset "utf-8";
+.point_wrap .charging_title{
+    margin:calc(100vw* (20/428)) 0;
+}
+
+.point_wrap .charging_content,
+.point_wrap .charging_present{
+    padding: calc(100vw* (20/428)) calc(100vw* (20/428)) calc(100vw* (30/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+    background:#fff;
+}
+
+.point_wrap .charging_benefits > p{
+    margin-bottom: calc(100vw* (15/428));
+}
+
+.point_wrap .charging_benefits .medal_cont ,
+.point_wrap .charging_benefits .medal{
+    display:flex;
+    align-items: flex-start;
+}
+
+.point_wrap .charging_benefits .medal_cont .medal_img{
+    width: calc(100vw* (32/428));
+    height: calc(100vw* (32/428));
+    margin-right: calc(100vw* (20/428));
+}
+
+.point_wrap .charging_benefits .medal_cont .medal_head{
+    display:flex;
+    align-items: center;
+    width: calc(100vw* (100/428));
+    margin-right: calc(100vw* (60/428));
+}
+
+.point_wrap .charging_benefits .medal_cont .medal_text{
+    margin-top: calc(100vw* (5/428));
+}
+
+.point_wrap .charging_benefits .medal_cont .medal_text span{
+    color:#acacac;
+}
+
+.point_wrap .charging_benefits .medal_cont .buy_benefits p{
+    font-size: calc(100vw* (14/428));
+}
+
+.point_wrap .charging_benefits .medal_cont{
+    padding-bottom: calc(100vw* (20/428));
+}
+
+.point_wrap .charging_benefits > ul{
+    position: relative;
+}
+
+.point_wrap .charging_benefits > ul::after{
+    margin-bottom: calc(100vw* (20/428));
+    position:absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height:1px;
+    left: calc(100vw* (-20/428));
+    bottom: calc(100vw* (-20/428));
+    background:#eaeaea;
+}
+
+.point_wrap .charging_money{
+    padding-top: calc(100vw* (20/428));
+}
+
+.point_wrap .money_package{
+    display :flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: calc(100vw* (10/428));
+}
+
+.point_wrap .money_package .charging_rank{
+    display :flex;
+    align-items: center; 
+}
+
+.point_wrap .money_package .charging_rank span{
+    font-size: calc(100vw* (14/428));
+    color:#acacac;
+}
+
+.point_wrap .money_package .charging_rank .medal_img{
+    width: calc(100vw* (24/428));
+    height: calc(100vw* (24/428));
+    margin-right: calc(100vw* (10/428));
+}
+
+.point_wrap .charging_money .money_list{
+    width:100%;
+    height: calc(100vw* (48/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc(100vw* (20/428));
+    cursor: pointer;
+}
+
+.point_wrap .charging_money .money_list.active{
+    border:1px solid #CC1219;
+}
+
+.point_wrap .charging_money .money_list:not(:last-child){
+    margin-bottom:20px;
+}
+
+.point_wrap .charging_money .money_list .money_list_label{
+    display:flex;
+    align-items: center;
+}
+
+.point_wrap .charging_money .money_list .point_icon{
+    width:calc(100vw* (32/428));
+    height: calc(100vw* (32/428));
+}
+
+.point_wrap .charging_money .money_list .money_list_label p{
+    margin:0 calc(100vw* (13/428)) 0 calc(100vw* (17/428));
+    color:#acacac;
+}
+
+.point_wrap .charging_money .money_list .money_list_label span{
+    color:#CC1219;
+}
+
+.point_wrap .payment{
+    margin-top: calc(100vw* (27/428));
+}
+
+.point_wrap .payment .payment_cont{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: calc(100vw* (10/428));
+    position: relative;
+}
+
+.point_wrap .payment .payment_cont::after{
+    position: absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height: 1px;
+    left: calc(100vw* (-20/428));
+    bottom: calc(100vw* (-10/428));
+    background-color: #eaeaea;
+}
+
+.point_wrap .payment .payment_option{
+    width: calc(100vw* (164/428));
+    height: calc(100vw* (44/428));
+    border-radius: calc(100vw* (10/428));
+    margin-bottom: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+}
+
+.point_wrap .payment .payment_option.active{
+    border:1px solid #CC1219;
+    color:#CC1219;
+}
+
+.point_wrap .charging_btn{
+    margin-top: calc(100vw* (30/428));
+}
+
+.point_wrap .charging_btn .chk_wrap{
+    justify-content: center;
+    margin-bottom: calc(100vw* (30/428));
+}
+
+.point_wrap .charging_btn .chk_wrap #all_agree{
+    margin-right: calc(100vw* (10/428));
+}
+
+.point_wrap .charging_btn .btn{
+    width:100%;
+    height: calc(100vw* (44/428));
+    border-radius: calc(100vw* (10/428));
+    background:#CC1219;
+    color:#fff;
+    
+}
+
+
+/* 충전 완료 */
+.charging_clear_wrap {
+    padding-top: calc(100vw* (20/428));
+}
+
+.charging_clear_wrap .charging_content{
+    padding: calc(100vw* (37/428)) 0 calc(100vw* (20/428));
+}
+
+.point_wrap .clear_icon{
+    width: calc(100vw* (90/428));
+    height: calc(100vw* (90/428));
+    margin-top: calc(100vw* (30/428));
+    border-radius: calc(100vw* (100/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.point_wrap .clear_icon_box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: calc(100vw* (30/428));
+}
+
+.point_wrap .clear_icon_box::after{
+    position:absolute;
+    content:'';
+    left: calc(100vw* (40/428));;
+    bottom:0;
+    width: calc(100vw* (298/428));
+    height: 1px;
+    background: #e4e4e4;
+}
+
+.point_wrap .clear_text_box{
+    margin-top: calc(100vw* (17/428));
+    padding: 0 calc(100vw* (40/428));
+}
+
+.point_wrap .clear_text{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.point_wrap .clear_text:not(:last-child){
+    margin-bottom: calc(100vw* (17/428));
+}
+
+.point_wrap .clear_text span{
+    color:#acacac;
+}
+
+.point_wrap .charging_clear_wrap .btn_group{
+    padding:0 calc(100vw* (20/428));
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: calc(100vw* (30/428));
+}
+
+/* 포인트 선물하기 */
+.point_wrap .present_id{
+    margin-bottom: calc(100vw* (17/428));
+}
+
+.point_wrap .present_id p{
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.point_wrap .present_id input{
+    width:100%;
+    height: calc(100vw* (44/428));
+    border-bottom:0;
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+    padding:0 calc(100vw* (20/428));
+}
+
+.cash_modal .small_text{
+    color:#CC1219;
+    margin-top: calc(100vw* (20/428));
+}

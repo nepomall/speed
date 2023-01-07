@@ -1,0 +1,388 @@
+/* 상단네비 */
+.storeFind_page .top_button,
+.favStore_page .top_button{
+    width: 100%;
+    display: flex;
+}
+
+.storeFind_page .top_button button,
+.favStore_page .top_button button{
+    width: 50%;
+    display: block;
+    height: calc(100vw*(40/428));
+    font-size: calc(100vw*(15/428));
+}
+
+.storeFind_page .top_button .active,
+.favStore_page .top_button .active{
+    border-bottom: 1px solid #CC1219;
+    color: #CC1219;
+}
+
+/* ----------------------------매장찾기 페이지-------------------------------- */
+/* ----------------------------매장찾기 페이지-------------------------------- */
+/* 검색--------------------------- */
+.storeFind_page .search_box{
+    position: relative;
+    margin: calc(100vw*(20/428)) 0;
+}
+
+.storeFind_page .search_box input[type=search]{
+    background: #fff;
+    width: 100%;
+    height: calc(100vw*(45/428));
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    padding: 0 calc(100vw*(45/428)) 0 calc(100vw*(20/428));
+    font-size: calc(100vw*(15/428));
+}
+
+.storeFind_page .search_btn{
+    width: calc(100vw*(45/428));
+    height: calc(100vw*(45/428));
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/common/icon_search.svg) no-repeat center center / cover;
+}
+
+.storeFind_page .search_help{
+    width: 100%;
+    min-height: calc(100vw*(135/428));
+    max-height: calc(100vw*(315/428));
+    overflow: auto;
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    background: #fff;
+    position: absolute;
+    top: calc(100vw*(50/428));
+    left: 0;
+    display: none;
+    z-index: 5;
+}
+
+.storeFind_page .search_help .list{
+    height: calc(100vw*(45/428));
+    line-height: calc(100vw*(45/428));
+    padding: 0 calc(100vw*(20/428));
+    font-size: calc(100vw*(15/428));
+}
+
+/* 리스트-------------------------------- */
+.storeFind_page .empty_box,
+.favStore_page .empty_box{
+    padding-top: calc(100vw*(130/428));
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+    text-align: center;
+}
+
+.favStore_page .store_list{
+    margin-top: calc(100vw*(20/428));
+}
+
+.storeFind_page .store_list,
+.favStore_page .empty_box{
+    display: none;
+}
+
+.storeFind_page .store_list .list,
+.favStore_page .store_list .list{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    padding: calc(100vw*(25/428)) calc(100vw*(20/428));
+}
+
+.storeFind_page .store_list .list:not(:last-child),
+.favStore_page .store_list .list:not(:last-child){
+    margin-bottom: calc(100vw*(20/428));
+}
+
+.storeFind_page .store_list .store_name,
+.favStore_page .store_list .store_name{
+    font-size: calc(100vw*(15/428));
+    margin-bottom: calc(100vw*(10/428));
+}
+
+.storeFind_page .store_list .store_location,
+.favStore_page .store_list .store_location{
+    font-size: calc(100vw*(14/428));
+    color: #444;
+    margin-bottom: calc(100vw*(10/428));
+}
+
+.storeFind_page .store_list .contect_num,
+.favStore_page .store_list .contect_num{
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+    padding-left: calc(100vw*(25/428));
+    position: relative;
+}
+
+.storeFind_page .store_list .contect_num::after,
+.favStore_page .store_list .contect_num::after{
+    width: calc(100vw*(15/428));
+    height: calc(100vw*(15/428));
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    background: url(../img/common/icon_phone.svg) no-repeat center center / cover;
+}
+
+.storeFind_page .store_list .store_name,
+.storeFind_page .store_list .store_location,
+.storeFind_page .store_list .contect_num,
+.favStore_page .store_list .store_name,
+.favStore_page .store_list .store_location,
+.favStore_page .store_list .contect_num{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(250/428));
+}
+
+.storeFind_page .right_box,
+.favStore_page .right_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.storeFind_page .fav_icon,
+.favStore_page .fav_icon{
+    width: calc(100vw*(16/428));
+    height: calc(100vw*(16/428));
+    margin-top: calc(100vw*(-10/428));
+    background: url(../img/common/star_empty.svg) no-repeat center center / cover;
+}
+
+.favStore_page .fav_icon{
+    background: url(../img/common/star.svg) no-repeat center center / cover;
+}
+
+.storeFind_page .fav_icon.active{
+    background: url(../img/common/star.svg) no-repeat center center / cover;
+}
+
+.storeFind_page .rez_btn,
+.favStore_page .rez_btn{
+    width: calc(100vw*(76/428));
+    height: calc(100vw*(34/428));
+    background: #fff;
+    border-radius: calc(100vw*(8/428));
+    font-size: calc(100vw*(14/428));
+    color: #CC1219;
+    border: 1px solid #CC1219;
+}
+
+/* 모달창--------------------------*/
+.favDelete_modal .big_text{
+    color: #CC1219;
+    margin-bottom: calc(100vw*(20/428));
+}
+
+/* ----------------------------매장찾기 상세페이지-------------------------------- */
+/* ----------------------------매장찾기 상세페이지-------------------------------- */
+.findDetail_page .content_section{
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    border-radius: calc(100vw*(10/428));
+    padding-bottom: calc(100vw*(30/428));
+    background: #fff;
+}
+
+.findDetail_page .store_img{
+    width: 100%;
+    height: calc(100vw*(228/428));
+    position: relative;
+}
+
+.findDetail_page .store_img .fav_icon{
+    width: calc(100vw*(20/428));
+    height: calc(100vw*(20/428));
+    background: url(../img/common/star_fff.svg) no-repeat center center / cover;
+    position: absolute;
+    top: calc(100vw*(10/428));
+    right: calc(100vw*(10/428));
+}
+
+.findDetail_page .store_img .fav_icon.active{
+    background: url(../img/common/star_empty.svg) no-repeat center center / cover;
+}
+
+.findDetail_page .info_box{
+    padding: 0 calc(100vw*(20/428));
+    margin: calc(100vw*(10/428)) 0 calc(100vw*(20/428));
+}
+
+.findDetail_page .info_box .store_name{
+    font-size: calc(100vw*(16/428));
+    font-weight: 600;
+    margin-bottom: calc(100vw*(7/428));
+}
+
+.findDetail_page .info_box .store_location{
+    font-size: calc(100vw*(15/428));
+    font-weight: 400;
+    margin-bottom: calc(100vw*(10/428));
+    color: #444;
+}
+
+.findDetail_page .info_box .store_num{
+    display: flex;
+    align-items: center;
+}
+
+.findDetail_page .info_box .store_num p{
+    font-size: calc(100vw*(15/428));
+    color: #acacac;
+    font-weight: 400;
+    margin-left: calc(100vw*(10/428));
+}
+
+.findDetail_page .info_box .icon_box{
+    width: calc(100vw*(27/428));
+    height: calc(100vw*(27/428));
+    border-radius: 50%;
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.findDetail_page .info_box .icon_box img{
+    width: calc(100vw*(12/428));
+    height: calc(100vw*(12/428));
+}
+
+.findDetail_page .map_area{
+    width: calc(100vw*(338/428));
+    height: calc(100vw*(184/428));
+    margin: auto;
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.findDetail_page .teacher_intro{
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: calc(100vw*(20/428));
+}
+
+.findDetail_page .title{
+    font-size: calc(100vw*(16/428));
+    margin-bottom: calc(100vw*(20/428));
+}
+
+.findDetail_page .teacher{
+    display: flex;
+}
+
+.findDetail_page .teacher:not(:first-child){
+    margin-top: calc(100vw*(40/428));
+}
+
+.findDetail_page .teacher .img_box{
+    width: calc(100vw*(68/428));
+    height: calc(100vw*(68/428));
+    border-radius: 50%;
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    margin-right: calc(100vw*(35/428));
+}
+
+.findDetail_page .teacher .name{
+    font-size: calc(100vw* (16/428));
+    margin-bottom: calc(100vw*(7/428));
+}
+
+.findDetail_page .teacher .history{
+    font-size: calc(100vw* (15/428));
+    color: #444;
+}
+
+.findDetail_page .teacher .history:not(:last-child){
+    margin-bottom: calc(100vw*(5/428));
+}
+
+.findDetail_page .store_info{
+    padding: calc(100vw*(20/428)) calc(100vw*(20/428)) 0;
+}
+
+.findDetail_page .store_info .title{
+    font-size: calc(100vw*(16/428));
+    margin-bottom: calc(100vw*(15/428));
+}
+
+.findDetail_page .store_info .list{
+    width: 100%;
+    display: flex;
+}
+
+.findDetail_page .store_info .list:not(:last-child){
+    margin-bottom: calc(100vw*(15/428));
+}
+
+.findDetail_page .store_info .list p:not(:first-child){
+    margin-top: calc(100vw*(5/428));
+}
+
+.findDetail_page .store_info .left{
+    width: 22%;
+    font-size: calc(100vw*(15/428));
+    color: #acacac;
+}
+
+.findDetail_page .store_info .right{
+    width: 78%;
+}
+
+.findDetail_page .store_info .right p{
+    font-size: calc(100vw*(15/428));
+    font-weight: 400;
+}
+
+.findDetail_page .store_info .address,
+.findDetail_page .store_info .parking,
+.findDetail_page .store_info .weekday,
+.findDetail_page .store_info .weekend{
+    color: #444;
+}
+
+.findDetail_page .store_info .num{
+    color: #acacac;
+    position: relative;
+    padding-left: calc(100vw*(26/428));
+}
+
+.findDetail_page .store_info .num::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100vw*(16/428));
+    height: calc(100vw*(16/428));
+    background: url(../img/common/icon_phone.svg) no-repeat center center / contain;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+
+.findDetail_page .store_info .sit_num{
+    color: #CC1219;
+}
+
+.findDetail_page .rez_btn{
+    width: 100%;
+    height: calc(100vw*(48/428));
+    background: #CC1219;
+    border-radius: calc(100vw*(8/428));
+    font-size: calc(100vw*(16/428));
+    color: #fff;
+    margin-top: calc(100vw*(40/428));
+}

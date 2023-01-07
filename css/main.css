@@ -1,0 +1,1427 @@
+/* ----------------------------스플래시 페이지-------------------------------- */
+/* ----------------------------스플래시 페이지-------------------------------- */
+.splash_section {
+    width: 100%;
+    height: 100vh;
+    background: #CC1219;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash_section p {
+    font-size: calc(100vw*(16/428));
+    color: #fff;
+    text-align: center;
+}
+
+.splash_section p::after {
+    width: calc(100vw*(130/428));
+    height: 1px;
+    background: #fff;
+    content: '';
+    display: block;
+    margin: calc(100vw*(10/428)) auto calc(100vw*(20/428));
+}
+
+/* 메인페이지---------------------------------------------------------------------*/
+/* 메인페이지---------------------------------------------------------------------*/
+/* 메인섹션 --------------------------------*/
+/* 상단이름 */
+.main_page .main_section .name_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: calc(100vw*(30/428));
+    padding-top: calc(100vw*(10/428));
+}
+
+.main_page .main_section .name_box h3 {
+    font-size: calc(100vw*(20/428));
+    font-weight: 700;
+    margin-bottom: calc(100vw*(30/428));
+}
+
+.main_page .main_section .name_box span {
+    color: #214BFF;
+    font-size: calc(100vw*(20/428));
+    font-weight: 700;
+}
+
+.main_page .main_section .name_box p {
+    font-size: calc(100vw*(16/428));
+    font-weight: 500;
+    line-height: 160%;
+    color: #444;
+}
+
+.main_page .main_section .name_box .img_box {
+    width: calc(100vw*(68/428));
+    height: calc(100vw*(154/428));
+}
+
+/* 포인트/이동/이벤트배너 */
+.main_page .main_section .point_box,
+.main_page .main_section .goReser_btn,
+.main_page .main_section .goPoint_btn{
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.main_page .main_section .point_box {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(100vw*(20/428));
+    margin: calc(100vw*(30/428))0 calc(100vw*(20/428));
+}
+
+.main_page .main_section .point_box p {
+    font-size: calc(100vw*(16/428));
+}
+
+.main_page .main_section .point_box .num{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(240/428));
+    text-align: right;
+}
+
+
+.main_page .main_section .point_box span {
+    color: #CC1219;
+}
+
+.main_page .main_section .link_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_page .main_section .link_wrap .main_btn {
+    width: calc(100vw*(180/428));
+    height: calc(100vw*(80/428));
+    padding: 0 calc(100vw*(26/428));
+    display: flex;
+    align-items: center;
+}
+
+.main_page .main_section .link_wrap .icon_box {
+    width: calc(100vw*(30/428));
+    height: calc(100vw*(30/428));
+    margin-right: calc(100vw*(20/428));
+}
+
+.main_page .main_section .link_wrap span {
+    font-size: calc(100vw*(15/428));
+    position: relative;
+}
+
+.main_page .main_section .link_wrap span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100vw*(18/428));
+    height: calc(100vw*(18/428));
+    background: url(../img/common/button_arrow.svg) no-repeat center center / cover;
+    top: 50%;
+    right: calc(100vw*(-24/428));
+    transform: translate(0, -50%);
+}
+
+/* 스코어카드&영상, 스윙영상 섹션-----------------------------------*/
+.main_page .cardVideo_section .content_box {
+    margin-top: calc(100vw*(30/428));
+}
+
+.main_page .cardVideo_section .title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main_page .cardVideo_section .title {
+    font-size: calc(100vw*(16/428));
+    font-weight: 700;
+}
+
+.main_page .cardVideo_section .title_box a {
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+}
+
+.main_page .cardVideo_section .canvas_wrap,
+.score_page .canvas_wrap {
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    margin-top: calc(100vw*(10/428));
+    padding-bottom: calc(100vw*(40/428));
+    position: relative;
+}
+
+.score_page .canvas_wrap{
+    margin-top: 0;
+}
+
+.score_page .canvas_section{
+    padding-top: calc(100vw*(20/428));
+}
+
+.main_page .cardVideo_section .canvas_bg,
+.score_page .canvas_wrap .canvas_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    border-radius: calc(100vw*(10/428));
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_page .cardVideo_section .canvas_bg span,
+.score_page .canvas_wrap .canvas_bg span{
+    color: #fff;
+    font-size: calc(100vw*(15/428));
+    line-height: 140%;
+}
+
+.main_page .cardVideo_section .canvas_wrap .depth,
+.score_page .canvas_wrap .depth {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.main_page .cardVideo_section .canvas_wrap .depth::after,
+.score_page .canvas_wrap .depth::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: calc(100vw*(333/428));
+    height: 1px;
+    background: #eee;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_page .cardVideo_section .canvas_wrap .list,
+.score_page .canvas_wrap .list {
+    width: calc(100vw*(126/428));
+    padding: calc(100vw*(20/428)) 0 calc(100vw*(25/428));
+    position: relative;
+    text-align: center;
+}
+
+.main_page .cardVideo_section .canvas_wrap .list:not(:last-child)::after,
+.score_page .canvas_wrap .list:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    height: calc(100vw*(34/428));
+    background: #eee;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.main_page .cardVideo_section .canvas_wrap .text,
+.score_page .canvas_wrap .text {
+    font-size: calc(100vw*(15/428));
+    color: #444;
+    margin-bottom: calc(100vw*(16/428));
+}
+
+.main_page .cardVideo_section .canvas_wrap .num,
+.score_page .canvas_wrap .num {
+    font-size: calc(100vw*(13/428));
+    width: 100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding: 0 calc(100vw*(10/428));
+}
+
+.main_page .cardVideo_section .canvas_wrap .num span,
+.score_page .canvas_wrap .num span {
+    font-size: calc(100vw*(16/428));
+    font-weight: 700;
+    color: #CC1219;
+}
+
+.canvas_wrap .canvas_box{
+    width: calc(81.7757vw);
+    height: calc(81.7757vw);
+    margin: auto;
+    position: relative;
+}
+
+.canvas_wrap .canvas_box .labels_data{
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: auto;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(15vw);
+    font-size: calc(100vw* (13/428));
+    font-weight: 700;
+    color: #214BFF;
+}
+
+.canvas_wrap .canvas_box .hit{
+    top: calc(10vw);
+    left: calc(30vw);
+}
+
+.canvas_wrap .canvas_box .driver{
+    top: calc(30vw);
+    left: calc(100vw* (275/428));
+}
+
+.canvas_wrap .canvas_box .green{
+    bottom: calc(10vw);
+    right: calc(11vw);
+}
+
+.canvas_wrap .canvas_box .power{
+    bottom: calc(10vw);
+    left: calc(6vw);
+}
+
+.canvas_wrap .canvas_box .putting{
+    top: calc(30vw);
+    left: calc(100vw* (0/428));
+}
+
+.main_page .cardVideo_section .video_wrap,
+.score_page .video_wrap {
+    width: 100%;
+    margin-top: calc(100vw*(10/428));
+    white-space: nowrap;
+    overflow-y: visible;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.main_page .cardVideo_section .video_wrap .depth,
+.score_page .video_wrap .depth {
+    display: flex;
+    width: fit-content;
+}
+
+.main_page .cardVideo_section .video_wrap::-webkit-scrollbar,
+.score_page .video_wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.main_page .cardVideo_section .video_wrap .empty_box,
+.score_page .empty_box {
+    width: 100%;
+    height: calc(100vw*(230/428));
+    border-radius: calc(100vw*(10/428));
+    background: #F7F7F8;
+    line-height: calc(100vw*(230/428));
+    text-align: center;
+    font-size: calc(100vw*(16/428));
+    color: #ACACAC;
+    display: none;
+}
+
+
+.main_page .cardVideo_section .video_wrap .list,
+.score_page .video_wrap .list {
+    width: calc(100vw*(156/428));
+    height: calc(100vw*(230/428));
+    border-radius: calc(100vw*(10/428));
+    background: url(../img/common/video_somenail.png) no-repeat center center / cover;
+    position: relative;
+}
+
+.main_page .cardVideo_section .video_wrap .list::after,
+.score_page .video_wrap .list::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: calc(100vw*(10/428));
+    z-index: 1;
+}
+
+.main_page .cardVideo_section .video_wrap .list:not(:last-child),
+.score_page .video_wrap .list:not(:last-child) {
+    margin-right: calc(100vw*(20/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.main_page .cardVideo_section .video_wrap .button_bg,
+.score_page .video_wrap .button_bg {
+    width: calc(100vw*(70/428));
+    height: calc(100vw*(56/428));
+    border-radius: calc(100vw*(10/428));
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(1,1,1,0.5);
+    z-index: 2;
+}
+
+.main_page .cardVideo_section .video_wrap .play_icon,
+.score_page .video_wrap .play_icon{
+    width: calc(100vw*(20/428));
+    height: calc(100vw*(16/428));
+    background: url(../img/common/play_btn.svg) no-repeat center center / contain;
+}
+
+/* 매장찾기 텝 섹션-----------------------------------*/
+.main_page .storeFind_section .content_box {
+    margin-top: calc(100vw*(30/428));
+}
+
+.main_page .storeFind_section .title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main_page .storeFind_section .title {
+    font-size: calc(100vw*(16/428));
+    font-weight: 700;
+}
+
+.main_page .storeFind_section .title_box a {
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+}
+
+.main_page .storeFind_section .tab_wrap{
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    margin-top: calc(100vw*(10/428));
+    border-radius: calc(100vw*(10/428));
+    height: auto;
+}
+
+.main_page .storeFind_section .tabs{
+    display: flex;
+    width: 100%;
+}
+
+.main_page .storeFind_section .tab{
+    width: 50%;
+    text-align: center;
+    padding: calc(100vw*(15/428)) 0;
+    color: #ACACAC;
+    font-size: calc(100vw*(15/428));
+}
+
+.main_page .storeFind_section .tab.active{
+    border-bottom: 1px solid #CC1219;
+    color: #CC1219;
+}
+
+.main_page .storeFind_section .content .list{
+    display: flex;
+    align-items: center;
+    padding: calc(100vw*(20/428)) calc(100vw*(16/428));
+    position: relative;
+}
+
+.main_page .storeFind_section .content .list:not(:last-child)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100vw*(345/428));
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    background: #eaeaea;
+}
+
+.main_page .storeFind_section .somenail_box{
+    width: calc(100vw*(76/428));
+    height: calc(100vw*(80/428));
+    margin-right: calc(100vw*(10/428));
+}
+
+.main_page .storeFind_section .store_name{
+    font-size: calc(100vw*(15/428));
+    margin-bottom: calc(100vw*(8/428));
+}
+
+.main_page .storeFind_section .address{
+    font-size: calc(100vw*(14/428));
+    color: #444;
+    margin-bottom: calc(100vw*(10/428));
+}
+
+.main_page .storeFind_section .number{
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+    padding-left: calc(100vw*(25/428));
+    position: relative;
+}
+
+.main_page .storeFind_section .number::after{
+    width: calc(100vw*(15/428));
+    height: calc(100vw*(15/428));
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    background: url(../img/common/icon_phone.svg) no-repeat center center / cover;
+}
+
+.main_page .storeFind_section .fav_icon{
+    width: calc(100vw*(16/428));
+    height: calc(100vw*(16/428));
+    background: url(../img/common/star_empty.svg) no-repeat center center / cover;
+    position: absolute;
+    top: calc(100vw*(30/428));
+    right: calc(100vw*(16/428));
+}
+
+.main_page .storeFind_section .fav_icon.active{
+    background: url(../img/common/star.svg) no-repeat center center / cover;
+}
+
+.main_page .storeFind_section .store_name,
+.main_page .storeFind_section .address,
+.main_page .storeFind_section .number{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(230/428));
+}
+
+/* 스코어페이지---------------------------------------------------------------------*/
+/* 스코어페이지---------------------------------------------------------------------*/
+.score_page .video_section .content_box,
+.score_page .rounding_section .content_box {
+    margin-top: calc(100vw*(30/428));
+}
+
+.score_page .video_section .title_box,
+.score_page .rounding_section .title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.score_page .video_section .title,
+.score_page .rounding_section .title {
+    font-size: calc(100vw*(16/428));
+    font-weight: 700;
+}
+
+.score_page .video_section .title_box a {
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+}
+
+/* 슬라이드--------------------*/
+.score_page .swiper-container{
+    margin-top: calc(100vw*(10/428));
+}
+
+.score_page .swiper-container .depth{
+    padding-bottom: calc(100vw*(60/428));
+}
+
+.score_page .swiper-container .list{
+    width: calc(100vw*(370/428));
+    margin: auto;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    border-radius: calc(100vw*(10/428));
+    padding: calc(100vw*(15/428)) calc(100vw*(20/428)) calc(100vw*(15/428)) calc(100vw*(40/428));
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #fff;
+}
+
+/* .score_page .swiper-container .list a{
+    display: flex;
+} */
+
+.score_page .swiper-container .list:not(:last-child){
+    margin-bottom: calc(100vw*(16/428));
+}
+
+.score_page .swiper-container .type{
+    position: absolute;
+    width: calc(100vw*(40/428));
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: calc(100vw*(10/428)) 0 0 calc(100vw*(10/428));
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score_page .swiper-container .type.hd{
+    background: #cc1219;
+}
+
+.score_page .swiper-container .type.normal{
+    background: #acacac;
+}
+
+.score_page .swiper-container .type span{
+    color:#fff;
+    font-size: calc(100vw*(13/428));
+}
+
+.score_page .swiper-container .text_box{
+    margin-left: calc(100vw*(16/428));
+}
+
+.score_page .swiper-container .round_name{
+    font-size: calc(100vw*(14/428));
+    margin-bottom: calc(100vw*(12/428));
+}
+
+.score_page .swiper-container .round_name .date{
+    color: #43425D;
+    font-size: calc(100vw* (14/428));
+}
+
+.score_page .swiper-container .location{
+    font-size: calc(100vw*(13/428));
+    color: #acacac;
+    font-weight: 400;
+}
+
+.score_page .swiper-container .score_box{
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.score_page .swiper-container .score_box .hit{
+    font-size: calc(100vw*(20/428));
+    font-weight: 700;
+    color: #cc1219;
+}
+
+.score_page .swiper-container .score_box .score{
+    font-size: calc(100vw*(13/428));
+    color: #43425D;
+}
+
+.score_page .swiper-container .round_name,
+.score_page .swiper-container .location{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(240/428));
+}
+
+.score_page .swiper-container .score_box .hit,
+.score_page .swiper-container .score_box .score{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(50/428));
+}
+
+/* 페이지네이션 */
+.score_page .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: calc(100vw*(20/428));
+}
+
+.score_page .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 calc(100vw*(5/428));
+}
+
+
+.score_page .swiper-pagination-bullet{
+    width: calc(100vw*(8/428));
+    height: calc(100vw*(8/428));
+}
+
+.score_page .swiper-pagination-bullet-active{
+    background: #cc1219;
+}
+
+/* 라운딩기록페이지---------------------------------------------------------------------*/
+/* 라운딩기록페이지---------------------------------------------------------------------*/
+/* 정보구간------------------------------- */
+.scoreDetail_page .info_section{
+    padding-top: calc(100vw*(20/428));
+}
+
+.scoreDetail_page .rounding_info{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    position: relative;
+    border-radius: calc(100vw*(10/428));
+    padding: calc(100vw*(15/428)) calc(100vw*(20/428)) calc(100vw*(15/428)) calc(100vw*(40/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    background: #fff;
+    margin-bottom: calc(100vw*(20/428));
+}
+
+.scoreDetail_page .rounding_info .type{
+    position: absolute;
+    width: calc(100vw*(40/428));
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: calc(100vw*(10/428)) 0 0 calc(100vw*(10/428));
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreDetail_page .rounding_info .type.hd{
+    background: #cc1219;
+}
+
+.scoreDetail_page .rounding_info .type.normal{
+    background: #acacac;
+}
+
+.scoreDetail_page .rounding_info span{
+    color:#fff;
+    font-size: calc(100vw*(13/428));
+}
+
+.scoreDetail_page .rounding_info .text_box{
+    margin-left: calc(100vw*(16/428));
+}
+
+.scoreDetail_page .rounding_info .round_name{
+    font-size: calc(100vw*(14/428));
+    margin-bottom: calc(100vw*(12/428));
+}
+
+.scoreDetail_page .rounding_info .round_name .date{
+    color: #43425D;
+    font-size: calc(100vw* (14/428));
+}
+
+.scoreDetail_page .rounding_info .location{
+    font-size: calc(100vw*(13/428));
+    color: #acacac;
+    font-weight: 400;
+}
+
+.scoreDetail_page .rounding_info .score_box{
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.scoreDetail_page .rounding_info .score_box .hit{
+    font-size: calc(100vw*(20/428));
+    font-weight: 700;
+    color: #cc1219;
+}
+
+.scoreDetail_page .rounding_info .round_name,
+.scoreDetail_page .rounding_info .location{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(240/428));
+}
+
+.scoreDetail_page .rounding_info .score_box .hit{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(50/428));
+}
+
+/* 테이블 */
+.scoreDetail_page .info_section .table_wrap{
+    width: 100%;
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+.scoreDetail_page .info_section .table_head{
+    width: 100%;
+    height: calc(100vw*(40/428));
+    line-height: calc(100vw*(40/428));
+    border-radius: calc(100vw*(10/428)) calc(100vw*(10/428)) 0 0;
+    background: #E5434A;
+    text-align: center;
+    color: #fff;
+    font-size: calc(100vw*(15/428));
+}
+
+.scoreDetail_page .info_section .table_head.out{
+    border-radius: 0;
+}
+
+.scoreDetail_page .info_section .table_body{
+    white-space: nowrap;
+    overflow-y: visible;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    width: 100%;
+}
+
+.scoreDetail_page .info_section .table_body::-webkit-scrollbar{
+    display: none;
+}
+
+.scoreDetail_page .info_section .table_body .depth{
+    display: flex;
+    width: fit-content;
+}
+
+.scoreDetail_page .info_section .table_body .list{
+    width: calc(100vw*(40/428));
+    height: calc(100vw*(40/428));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreDetail_page .info_section .table_body span{
+    font-size: calc(100vw*(15/428));
+    color: #acacac;
+}
+
+.scoreDetail_page .info_section .hole .list{
+    background: #e78d91;
+}
+
+.scoreDetail_page .info_section .scr .list{
+    background: #FFD3D5;
+}
+
+.scoreDetail_page .info_section .hole span{
+    color: #fff;
+}
+
+.scoreDetail_page .info_section .table_body .left_text{
+    width: calc(100vw*(86/428));
+    margin-right: calc(100vw*(2/428));
+}
+
+.scoreDetail_page .info_section .red_border{
+    border: 1px solid #cc1219;
+}
+
+.scoreDetail_page .plz_scroll{
+    width: 100%;
+    height: 100%;
+    border-radius: calc(100vw*(10/428));
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    padding-top: calc(100vw*(100/428));
+}
+
+.scoreDetail_page .plz_scroll .icon_box{
+    width: calc(100vw*(90/428));
+    height: calc(100vw*(100/428));
+    margin: auto;
+}
+
+.scoreDetail_page .plz_scroll .text{
+    margin-top: calc(100vw*(35/428));
+    line-height: 180%;
+    text-align: center;
+}
+
+.scoreDetail_page .plz_scroll .text span{
+    color: #fff;
+}
+
+.scoreDetail_page .plz_scroll .text .big{
+    font-size: calc(100vw*(16/428));
+    font-weight: 700;
+}
+
+.scoreDetail_page .plz_scroll .text .small{
+    font-size: calc(100vw*(13/428));
+    font-weight: 200;
+}
+
+/* 라운드분석---------------------------------*/
+.scoreDetail_page .analysis_section{
+    margin-top: calc(100vw*(40/428));
+}
+
+.scoreDetail_page .analysis_section .title{
+    font-size: calc(100vw*(16/428));
+    margin-bottom: calc(100vw*(10/428));
+    font-weight: 700;
+}
+
+.scoreDetail_page .analysis_section .chart_wrap{
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    padding-bottom: calc(100vw*(30/428));
+}
+
+.scoreDetail_page .bar_data{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: calc(100vw*(210/428));
+    padding: 0 calc(100vw* (20/428));
+    border-bottom: 1px solid #cc1219;
+}
+
+.scoreDetail_page .bar_data .list{
+    width: calc(100vw*(60/428));
+    height: 80%;
+    border-radius: calc(100vw*(4/428)) calc(100vw*(4/428)) 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.scoreDetail_page .bar_data strong{
+    display: block;
+    width: calc(100vw*(33/428));
+    height: 0;
+    border-radius: calc(100vw*(4/428)) calc(100vw*(4/428)) 0 0;
+    background: #E5434A;
+    position: relative;
+}
+
+.scoreDetail_page .bar_data span{
+    position: absolute;
+    display: block;
+    top: calc(100vw*(-30/428));
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: calc(100vw*(15/428));
+    text-align: center;
+    width: calc(100vw*(80/428));
+}
+
+.scoreDetail_page .bar_labels{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 calc(100vw* (20/428));
+    margin-top: calc(100vw*(5/428));
+}
+
+.scoreDetail_page .bar_labels .list{
+    width: calc(100vw*(60/428));
+    font-size: calc(100vw*(14/428));
+}
+
+/* 최근5경기---------------------------------*/
+.scoreDetail_page .recentMatch_section{
+    margin-top: calc(100vw*(40/428));
+}
+
+.scoreDetail_page .recentMatch_section .title{
+    font-size: calc(100vw*(16/428));
+    margin-bottom: calc(100vw*(10/428));
+    font-weight: 700;
+}
+
+.scoreDetail_page .recentMatch_section .chart_wrap{
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    padding: calc(100vw*(20/428)) calc(100vw*(20/428)) calc(100vw*(40/428));
+}
+
+.scoreDetail_page .chart_wrap .top_labels{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: calc(100vw*(15/428));
+    border-bottom: 1px solid #eaeaea;
+}
+
+.scoreDetail_page .chart_wrap .top_labels .list{
+    width: calc(100vw*(40/428));
+    text-align: center;
+}
+
+.scoreDetail_page .chart_wrap .top_labels .text{
+    font-size: calc(100vw*(13/428));
+    margin-bottom: calc(100vw*(10/428));
+    font-weight: 500;
+    color: #444;
+}
+
+.scoreDetail_page .chart_wrap .top_labels .num{
+    font-size: calc(100vw*(16/428));
+    font-weight: 500;
+    color: #cc1219;
+}
+
+.scoreDetail_page .canvas_area{
+    display: flex;
+    width: 100%;
+    margin-top: calc(100vw*(35/428));
+}
+
+.scoreDetail_page .canvas_area .canvas_size{
+    width: calc(100vw*(176/428));
+    height: calc(100vw*(176/428));
+}
+
+.scoreDetail_page .canvas_area .right_labels{
+    margin-left: calc(100vw*(54/428));
+}
+
+.scoreDetail_page .canvas_area .right_labels .list{
+    display: flex;
+    height: calc(100vw*(20/428));
+    align-items: center;
+}
+
+.scoreDetail_page .canvas_area .right_labels .list:not(:last-child){
+    margin-bottom: calc(100vw*(10/428));
+}
+
+.scoreDetail_page .canvas_area .right_labels .color_box{
+    width: calc(100vw*(20/428));
+    height: calc(100vw*(20/428));
+    border-radius: calc(100vw*(4/428));
+    margin-right: calc(100vw*(20/428));
+    background: red;
+}
+
+.scoreDetail_page .canvas_area .right_labels .text{
+    width: calc(100vw*(35/428));
+}
+
+.scoreDetail_page .canvas_area .right_labels .text,
+.scoreDetail_page .canvas_area .right_labels .num{
+    font-size: calc(100vw*(13/428));
+    color: #444;
+    font-weight: 500;
+}
+
+.scoreDetail_page .canvas_area .list.eagle .color_box{
+    background: #E5B943;
+}
+
+.scoreDetail_page .canvas_area .list.birdie .color_box{
+    background: #4349E5;
+}
+
+.scoreDetail_page .canvas_area .list.par .color_box{
+    background: #E56243;
+}
+
+.scoreDetail_page .canvas_area .list.bogey .color_box{
+    background: #878BFF;
+}
+
+.scoreDetail_page .canvas_area .list.double .color_box{
+    background: #A7E543;
+}
+
+.scoreDetail_page .canvas_area .list.etc .color_box{
+    background: #E59443;
+}
+
+/* 스윙코치/나샷 페이지---------------------------------------------------------------------*/
+/* 스윙코치/나샷 페이지---------------------------------------------------------------------*/
+/* 스윙코치----------------------- */
+.swing_page .empty_box{
+    width: 100%;
+    padding-top: calc(100vw*(220/428));
+    font-size: calc(100vw* (16/428));
+    color: #acacac;
+    font-weight: 500;
+    text-align: center;
+    display: none;
+}
+
+.swing_page .video_area{
+    margin-top: calc(100vw* (20/428));
+}
+
+.swing_page .video_area .list{
+    display: flex;
+    justify-content: space-between;
+    padding: calc(100vw* (20/428));
+    height: calc(100vw* (116/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+.swing_page .video_area .list:not(:last-child){
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.swing_page .video_area .list::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1px;
+    height: calc(100vw* (76/428));
+    background: #eee;
+}
+
+.swing_page .video_area .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.swing_page .video_area .date{
+    font-size: calc(100vw* (14/428));
+    font-weight: 500;
+    color: #444;
+}
+
+.swing_page .video_area .option_text{
+    display: flex;
+}
+
+.swing_page .video_area .option_text:nth-child(1){
+    margin-bottom: calc(100vw* (8/428));
+}
+
+.swing_page .video_area .option_text p{
+    font-size: calc(100vw* (14/428));
+    font-weight: 500;
+}
+
+.swing_page .video_area .option_text p:nth-child(1){
+    color: #acacac;
+    width: calc(100vw* (60/428));
+}
+
+.swing_page .video_area .option_text.club p:nth-child(2){
+    color: #cc1219;
+}
+
+.swing_page .video_area .option_text.distance p:nth-child(2){
+    color: #214BFF;
+}
+
+.swing_page .video_area .right{
+    display: flex;
+}
+
+.swing_page .video_area .right .somenail{
+    width: calc(100vw* (54/428));
+    text-align: center;
+}
+
+.swing_page .video_area .right .somenail span{
+    font-size: calc(100vw* (14/428));
+    font-weight: 500;
+    color: #444;
+}
+
+.swing_page .video_area .right .somenail:nth-child(1){
+    margin-right: calc(100vw* (20/428));
+}
+
+.swing_page .video_area .right .somenail .img_box{
+    width: calc(100vw* (54/428));
+    height: calc(100vw* (54/428));
+    border-radius: calc(100vw* (4/428));
+    margin-bottom: calc(100vw* (5/428));
+    overflow: hidden;
+    position: relative;
+}
+
+.swing_page .video_area .right .somenail .img_box::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    top: 0;
+    left: 0;
+}
+
+/* 나샷------------------------ */
+.shot_page .video_area{
+    margin-top: calc(100vw* (20/428));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shot_page .video_area .list{
+    width: calc(100vw* (120/428));
+    height: calc(100vw* (146/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    margin-top: calc(100vw* (10/428));
+    overflow: hidden;
+    position: relative;
+}
+
+.shot_page .video_area .list:nth-child(1),
+.shot_page .video_area .list:nth-child(2),
+.shot_page .video_area .list:nth-child(3){
+    margin-top: 0;
+}
+
+.shot_page .video_area .list::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+}
+
+.shot_page .video_area .list .date{
+    width: 100%;
+    height: calc(100vw* (30/428));
+    line-height: calc(100vw* (30/428));
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: calc(100vw* (14/428));
+    font-weight: 500;
+}
+
+/* 비디오 상세페이지---------------------------------------------------------------------*/
+/* 비디오 상세페이지---------------------------------------------------------------------*/
+.videoDetail_page{
+    padding-top: calc(100vw* (20/428));
+}
+
+.videoDetail_page .play_section{
+    border-radius: calc(100vw* (10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+/* 비디오플레이어--------------------*/
+.videoDetail_page .video_title{
+    background: #cc1219;
+    border-radius: calc(100vw* (10/428)) calc(100vw* (10/428)) 0 0;
+    height: calc(100vw* (40/428));
+    color: #fff;
+    font-size: calc(100vw* (15/428));
+    line-height: calc(100vw* (40/428));
+    font-weight: 500;
+    text-align: center;
+}
+
+.videoDetail_page .screen_wrap{
+    width: 100%;
+    height: calc(100vw* (205/428));
+    position: relative;
+}
+
+.videoDetail_page .screen_wrap .play_bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.videoDetail_page .screen_wrap .screen_btn{
+    width: calc(100vw* (90/428));
+    height: calc(100vw* (90/428));
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoDetail_page .screen_wrap.play .play_bg{
+    opacity: 0;
+}
+
+.videoDetail_page .screen_wrap .screen_btn img{
+    width: calc(100vw* (36/428));
+    height: calc(100vw* (36/428));
+    margin-left: calc(100vw* (10/428));
+}
+
+.videoDetail_page .video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.videoDetail_page .video_controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 calc(100vw* (20/428));
+    width: 100%;
+    height: calc(100vw* (45/428));
+    border-radius: 0 0 calc(100vw* (10/428)) calc(100vw* (10/428));
+    background: #43425D;
+}
+
+.videoDetail_page .video_controls .left_side{
+    display: flex;
+    align-items: center;
+}
+
+.videoDetail_page .video_play{
+    width: calc(100vw* (20/428));
+    height: calc(100vw* (20/428));
+    background: url(../img/common/play_btn.svg) no-repeat center center / contain;
+    margin-right: calc(100vw* (30/428));
+}
+
+.videoDetail_page .video_play.play{
+    background: url(../img/common/icon_pause.svg) no-repeat center center / contain;
+}
+
+.videoDetail_page .video_timer{
+    height: calc(100vw* (20/428));
+    line-height: calc(100vw* (20/428));
+}
+
+.videoDetail_page .video_timer,
+.videoDetail_page .video_timer span{
+    font-size: calc(100vw* (12/428));
+    font-weight: 400;
+    color: #fff;
+}
+
+.videoDetail_page .video_bar{
+    width: 100%;
+    height: calc(100vw* (5/428));
+    background: #69687d;
+}
+
+.videoDetail_page .bar_fill{
+    height: 100%;
+    width: 0%;
+    background: #E5434A;
+}
+
+.videoDetail_page .type_wrap{
+    position: absolute;
+    top: calc(100vw* (-55/428));
+    right: calc(100vw* (10/428));
+    width: calc(100vw* (80/428));
+    height: calc(100vw* (35/428));
+    background: #000;
+    border-radius: calc(100vw* (8/428));
+}
+
+.videoDetail_page .type_wrap div,
+.videoDetail_page .type_wrap li{
+    color: #fff;
+    font-size: calc(100vw* (13/428));
+    text-align: center;
+    line-height: calc(100vw* (35/428));
+    font-weight: 500;
+}
+
+.videoDetail_page .type_wrap .type_select{
+    position: absolute;
+    top: calc(100vw* (40/428));
+    border-radius: calc(100vw* (8/428));
+    background: #000;
+    width: 100%;
+    display: none;
+    z-index: 10;
+}
+
+/* 비디오정보------------------------ */
+.videoDetail_page .videoInfo_wrap{
+    margin-top: calc(100vw* (20/428));
+    padding: calc(100vw* (20/428));
+    position: relative;
+}
+
+.videoDetail_page .videoInfo_wrap::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100vw* (338/428));
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #eaeaea;
+}
+
+.videoDetail_page .videoInfo_wrap .title{
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+    margin-bottom: calc(100vw* (10/428));
+    line-height: 140%;
+}
+
+.videoDetail_page .videoInfo_wrap .small_title{
+    font-size: calc(100vw* (15/428));
+    font-weight: 400;
+    line-height: 140%;
+    color: #acacac;
+}
+
+.videoDetail_page .recode_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(100vw* (30/428));
+}
+
+.videoDetail_page .recode_wrap .list{
+    display: flex;
+    width: 50%;
+    margin-bottom: calc(100vw* (30/428));
+}
+
+.videoDetail_page .recode_wrap .list:nth-child(5),
+.videoDetail_page .recode_wrap .list:nth-child(6){
+    margin-bottom: 0;
+}
+
+.videoDetail_page .recode_wrap .list p{
+    width: 50%;
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+}
+
+.videoDetail_page .recode_wrap .list p:nth-child(2){
+    color: #cc1219;
+}

@@ -1,0 +1,377 @@
+/* 로그인페이지---------------------------------------------------------- */
+/* 로그인페이지---------------------------------------------------------- */
+.body_color{
+    background: #fbfbfb;
+}
+
+.signInMain_page{
+    background: #CC1219;
+    height: 100vh;
+}
+
+.signInMain_page .inner_wrap{
+    padding: calc(100vw*(90/428)) 0 calc(100vw*(50/428));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.signInMain_page .big_logo{
+    width: calc(100vw*(224/428));
+    height: calc(100vw*(102/428));
+    margin: auto;
+    margin-bottom: calc(100vw*(60/428));
+}
+
+.signInMain_page .chk{
+    background: url("../img/common/chkFFF_empty.svg") no-repeat center center / contain;
+}
+
+.signInMain_page .chk:checked{
+    background: url("../img/common/chkFFF.svg") no-repeat center center / contain;
+}
+
+.signInMain_page input[type=password]{
+    margin: calc(100vw*(15/428)) 0;
+}
+
+.signInMain_page input[type=text],
+.signInMain_page input[type=password]{
+    padding: 0 calc(100vw*(10/428));
+    border-bottom: 1px solid #fff;
+}
+
+.signInMain_page input[type=text],
+.signInMain_page input::placeholder{
+    font-weight: 500;
+}
+
+.signInMain_page input[type=password]{
+    padding: 0 calc(100vw*(10/428));
+    border-bottom: 1px solid #fff;
+}
+
+.signInMain_page input,
+.signInMain_page input::placeholder{
+    color: #fff;
+}
+
+.signInMain_page .extra_option{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc(100vw*(10/428));
+}
+
+.signInMain_page .extra_option a,
+.signInMain_page .chk_wrap label{
+    font-size: calc(100vw*(15/428));
+    color: #fff;
+    font-weight: 400;
+}
+
+.signInMain_page .chk_wrap label{
+    margin-left: calc(100vw*(8/428));
+}
+
+.signInMain_page .button_wrap,
+.signInMain_page button{
+    width: 100%;
+}
+
+.signInMain_page button{
+    height: calc(100vw*(48/428));
+    border-radius: calc(100vw*(10/428));
+    font-size: calc(100vw*(15/428));
+    font-weight: 700;
+}
+
+.signInMain_page .signIn_btn{
+    background: #fff;
+    color: #CC1219;
+    margin-bottom: calc(100vw*(20/428));
+}
+
+.signInMain_page .signUp_btn{
+    background: #000;
+    color: #fff;
+}
+
+/* 토스트팝업-------------------------- */
+.toast_pop.plzWrite,
+.toast_pop.plzChking{
+    top: calc(100vw* (570/428));
+    transform: translate(-50%,0);
+}
+
+/* 회원가입페이지---------------------------------------------------------- */
+/* 회원가입페이지---------------------------------------------------------- */
+.signUp_page .inner_wrap{
+    padding: calc(100vw*(20/428)) 0 calc(100vw*(50/428));
+}
+
+.signUp_page .input_wrap span{
+    display: none;
+    font-weight: 400;
+    font-size: calc(100vw*(15/428));
+}
+
+.signUp_page .input_wrap{
+    margin-bottom: calc(100vw*(25/428));
+}
+
+.signUp_page .input_title{
+    font-size: calc(100vw*(16/428));
+    color: #2D2F39;
+    font-weight: 500;
+}
+
+.signUp_page .input_wrap input[type=text],
+.signUp_page .input_wrap input[type=password]{
+    margin-top: calc(100vw*(5/428));
+}
+
+.signUp_page .input_wrap input[type=text],
+.signUp_page .input_wrap input[type=password]::placeholder{
+    font-weight: 400;
+}
+
+.signUp_page .input_wrap .absol{
+    position: relative;
+}
+
+.signUp_page .input_wrap button{
+    width: calc(100vw*(90/428));
+    height: calc(100vw*(40/428));
+    background: #fff;
+    border: 1px solid #CC1219;
+    color: #CC1219;
+    font-size: calc(100vw*(15/428));
+    border-radius: calc(100vw*(8/428));
+    position: absolute;
+    bottom: calc(100vw*(10/428));
+    font-weight: 500;
+    right: 0;
+}
+
+.signUp_page .id_part input[type=text],
+.signUp_page .num_part input[type=text]{
+    padding-right: calc(100vw*(100/428));
+}
+
+.signUp_page .num_part .chk_wrap{
+    margin-top: calc(100vw*(15/428));
+}
+
+.signUp_page .num_part .chk_wrap label{
+    margin-right: calc(100vw*(12/428));
+    font-size: calc(100vw*(14/428));
+    font-weight: 400;
+}
+
+.signUp_page .chk_wrap.last_chk{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.signUp_page .chk_wrap.last_chk label{
+    font-size: calc(100vw*(14/428));
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.signUp_page .chk_wrap.last_chk a{
+    display: inline;
+    text-decoration: underline;
+    font-size: calc(100vw*(14/428));
+    font-weight: 400;
+    color: #CC1219;
+}
+
+.signUp_page .signUp_btn{
+    width: 100%;
+    height: calc(100vw*(48/428));
+    font-size: calc(100vw*(15/428));
+    border-radius: calc(100vw*(10/428));
+    margin-top: calc(100vw*(80/428));
+    font-weight: 700;
+    background: #CC1219;
+    color: #fff;
+}
+
+.signUp_page .signUp_btn:disabled{
+    background: #f1cbcd;
+}
+
+.signUp_page .recommender .input_title,
+.warning{
+    color: #CC1219;
+}
+
+.possible{
+    color: #214BFF;
+}
+
+.signUp_page .recommender span{
+    display: inline;
+    font-size: calc(100vw*(14/428));
+}
+
+.pw_part.active input,
+.mail_part.active input,
+.num_part.active #chkNum_input{
+    color: #CC1219;
+    border-bottom: 1px solid #CC1219;
+}
+
+/* 아이디/비밀번호 찾기 페이지---------------------------------------------------------- */
+/* 아이디/비밀번호 찾기 페이지---------------------------------------------------------- */
+/* 상단네비 */
+.idFind_page .top_button,
+.pwFind_page .top_button{
+    width: 100%;
+    display: flex;
+}
+
+.idFind_page .top_button button,
+.pwFind_page .top_button button{
+    width: 50%;
+    display: block;
+    height: calc(100vw*(40/428));
+    font-size: calc(100vw*(15/428));
+}
+
+.idFind_page .top_button .active,
+.pwFind_page .top_button .active{
+    border-bottom: 1px solid #CC1219;
+    color: #CC1219;
+}
+
+/* 인풋구간 */
+.idFind_page .input_container,
+.pwFind_page .input_container{
+    margin-top: calc(100vw*(40/428));
+}
+
+.idFind_page .input_wrap span,
+.pwFind_page .input_wrap span,
+.pwFind_page .newPW_container span{
+    display: none;
+    font-weight: 400;
+    font-size: calc(100vw*(15/428));
+}
+
+.idFind_page .num_part span,
+.pwFind_page .num_part span{
+    display: inline;
+}
+
+.idFind_page .input_wrap,
+.pwFind_page .input_wrap{
+    margin-bottom: calc(100vw*(25/428));
+}
+
+.idFind_page .input_title,
+.pwFind_page .input_title{
+    font-size: calc(100vw*(16/428));
+    color: #2D2F39;
+    font-weight: 500;
+}
+
+.idFind_page .input_wrap input[type=text],
+.pwFind_page input[type=text],
+.pwFind_page input[type=password]{
+    margin-top: calc(100vw*(5/428));
+}
+
+.idFind_page .input_wrap input[type=text],
+.pwFind_page input[type=text],
+.pwFind_page input[type=password]::placeholder{
+    font-weight: 400;
+}
+
+.idFind_page .input_wrap .absol,
+.pwFind_page .input_wrap .absol{
+    position: relative;
+}
+
+.idFind_page .input_wrap button,
+.pwFind_page .input_wrap button{
+    width: calc(100vw*(90/428));
+    height: calc(100vw*(40/428));
+    background: #fff;
+    border: 1px solid #CC1219;
+    color: #CC1219;
+    font-size: calc(100vw*(15/428));
+    border-radius: calc(100vw*(8/428));
+    position: absolute;
+    bottom: calc(100vw*(10/428));
+    font-weight: 500;
+    right: 0;
+}
+
+.idFind_page .idFind_btn,
+.pwFind_page .pwFind_btn{
+    width: 100%;
+    height: calc(100vw*(48/428));
+    font-size: calc(100vw*(15/428));
+    border-radius: calc(100vw*(10/428));
+    margin-top: calc(100vw*(80/428));
+    background: #CC1219;
+    color: #fff;
+}
+
+.idFind_page .idFind_btn:disabled,
+.pwFind_page .pwFind_btn:disabled{
+    background: #f1cbcd;
+}
+
+/* 확인 레이아웃 */
+.idFind_page .check_container,
+.pwFind_page .check_container{
+    width: 100%;
+    padding-top: calc(100vw*(90/428));
+    display: none;
+}
+
+.pwFind_page .newPW_container{
+    width: 100%;
+    margin-top: calc(100vw*(40/428));
+    display: none;
+}
+
+.idFind_page .check_container .icon_box,
+.pwFind_page .check_container .icon_box{
+    width: calc(100vw*(86/428));
+    height: calc(100vw*(86/428));
+    box-shadow: 0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0,0,0,0.16);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: calc(100vw*(30/428));
+}
+
+.idFind_page .check_container .icon_box img,
+.pwFind_page .check_container .icon_box img{
+    width: calc(100vw*(45/428));
+    height: calc(100vw*(30/428));
+}
+
+.idFind_page .check_container .text,
+.pwFind_page .check_container .text{
+    color: #444444;
+    font-size: calc(100vw*(15/428));
+    text-align: center;
+    font-weight: 700;
+}
+
+.idFind_page .check_container .id_info{
+    color: #CC1219;
+    font-size: calc(100vw*(16/428));
+    text-align: center;
+    font-weight: 700;
+    margin-top: calc(100vw*(20/428));
+}
+

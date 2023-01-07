@@ -1,0 +1,576 @@
+@charset "utf-8";
+.mypage{
+    padding-top: calc(100vw* (20/428));
+}
+
+.mypage .my_information{
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.mypage .my_information{
+    padding-top: calc(100vw* (20/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.mypage .my_content{
+    padding: 0 calc(100vw* (20/428));
+}
+
+.mypage .my_name{
+    display:flex;
+    align-items: flex-end;
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.mypage .my_name p{
+    font-size: calc(100vw* (18/428));
+    font-weight:700;
+    margin-right: calc(100vw* (7/428));
+}
+
+.mypage .my_name span{
+    font-size: calc(100vw* (14/428));
+    font-weight:400;
+    color:#acacac;
+}
+
+.mypage .my_information_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: calc(100vw* (13/428));
+}
+
+.mypage .my_information_box::after{
+    position:absolute;
+    content:'';
+    left: calc(100vw* (-20/428));
+    bottom: calc(100vw* (-13/428));
+    width: calc(100vw* (378/428));
+    height: 1px;
+    background:#EEEEEE;
+}
+
+.mypage .my_lank{
+    display:flex;
+    align-items: center;
+}
+
+.mypage .lank_icon{
+    width: calc(100vw* (30/428));
+    height: calc(100vw* (30/428));
+}
+
+.mypage .my_lank p{
+    color:#444;
+    font-weight:700;
+    font-size: calc(100vw* (14/428));
+    margin: 0 calc(100vw* (10/428));
+}
+
+.mypage .what_icon{
+    width: calc(100vw* (24/428));
+    height: calc(100vw* (24/428));
+}
+
+.mypage .my_modify a{
+    display:flex;
+    align-items: center;
+}
+
+.mypage .my_modify p{
+    font-size: calc(100vw* (14/428));
+}
+
+.mypage .my_modify .right_arrow img{
+    filter: invert(78%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(89%) contrast(86%);
+}
+
+.mypage .right_arrow{
+    width: calc(100vw* (16/428));
+    height: calc(100vw* (16/428));
+}
+
+.mypage .my_button_box .right_arrow img{
+    filter: brightness(0);
+}
+
+.mypage .my_button_group{
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+
+.mypage .my_button_box{
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vw* (97/428));
+}
+
+.mypage .my_button_box a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vw* (97/428));
+}
+
+.mypage .my_button_box a > span{
+    font-size: calc(100vw* (20/428));
+    font-weight:500;
+    color:#CC1219;
+}
+
+.mypage .my_button_group .right_border{
+    position:relative;
+}
+
+.mypage .my_button_group .right_border::after{
+    position:absolute;
+    content:'';
+    right:0;
+    top:0;
+    width:1px;
+    height: calc(100vw* (97/428));
+    background:#eee;
+}
+
+.mypage .arrow_title{
+    display:flex;
+    align-items: center;
+    margin-bottom: calc(100vw* (16/428));
+}
+
+.mypage .arrow_title p{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    margin-right: calc(100vw* (4/428));
+}
+
+.mypage .arrow_title .right_arrow{
+    width: calc(100vw* (18/428));
+    height: calc(100vw* (18/428));
+}
+
+.mypage .category_btn{
+    width:100%;
+    height: calc(100vw* (80/428));
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    padding:0 calc(100vw* (20/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.mypage .category_btn:not(:last-child){
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.mypage .category_icon_box{
+    display: flex;
+    align-items: center;
+}
+
+.mypage .category_icon{
+    width: calc(100vw* (48/428));
+    height: calc(100vw* (48/428));
+    margin-right: calc(100vw* (20/428));
+}
+
+.mypage .category_arrow{
+    width: calc(100vw* (24/428));
+    height: calc(100vw* (24/428));
+}
+
+.mypage .half_btn_box .category_btn{
+    width: calc(100vw* (179/428));
+    justify-content: center;
+}
+
+.mypage .half_btn{
+    display:flex;
+    align-items: center;
+    width:100%;
+    height: calc(100vw* (80/428));
+}
+
+.mypage .half_btn_box{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: calc(100vw* (30/428));
+}
+
+/* 포인트 */
+
+.mypage .my_point_list_cont{
+    text-align: center;
+}
+
+.mypage .my_point_list{
+    position: relative;
+    padding: calc(100vw* (20/428));
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mypage .my_point_list::after{
+    position:absolute;
+    content:'';
+    left:0;
+    bottom:0;
+    width: calc(100vw* (378/428));
+    height: 1px;
+    background:#eee;
+    
+}
+
+.mypage .my_point_list_box{
+    width:100%;
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+    background:#fff;
+    min-height: calc(100vw* (430/428));
+}
+
+.mypage .my_point_icon_box{
+    display:flex;
+    align-items: center;
+}
+
+.mypage .my_point_text{
+    text-align: left;
+}
+
+.mypage .my_point_text > p{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    margin-bottom: calc(100vw* (10/428));
+}
+
+.mypage .my_point_text > span{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    color:#acacac;
+}
+
+.mypage .my_point_icon{
+    width: calc(100vw* (30/428));
+    height: calc(100vw* (30/428));
+    margin-right: calc(100vw* (20/428));
+}
+
+.mypage .plus{
+    color:#214BFF;   
+}
+
+.mypage .my_point_pay{
+    display:flex;
+    align-items: center;
+}
+
+.mypage .my_point_pay > span,
+.mypage .my_point_pay > p{
+    font-size: calc(100vw* (20/428));
+    font-weight: 500;
+}
+
+.mypage .my_point_pay > span{
+    font-size: calc(100vw* (20/428));
+    font-weight: 500;
+    margin-right: calc(100vw* (10/428));
+}
+
+.mypage .my_point_history p,
+.mypage .my_point_history span{
+    font-size: calc(100vw* (16/428));
+}
+
+.mypage .my_point_history .my_point_pay{
+    margin-bottom: calc(100vw* (10/428));
+    justify-content: flex-end;
+}
+
+.mypage .my_point_history .my_point_pay span{
+    color:#CC1219
+}
+
+.mypage .my_point_history .my_point_pay .present_text{
+    color:#214BFF;
+}
+
+
+
+.mypage .my_point_history > p{
+    color:#acacac;
+}
+
+/* 내 쿠폰 */
+.mypage .my_coupon_chk_box input{
+    margin-right: calc(100vw* (10/428));
+}
+
+.mypage .my_coupon_chk_box{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.mypage .my_coupon_go a{
+    display:flex;
+    align-items: center;
+}
+
+.mypage .my_coupon_go p{
+    color:#acacac;
+}
+
+.mypage .my_coupon_go p.on{
+    color:#cc1219;
+}
+
+.mypage .my_coupon_go .right_arrow{
+    width: calc(100vw* (18/428));
+    height: calc(100vw* (18/428));
+}
+
+.mypage .my_coupon_go .right_arrow img{
+    filter: invert(78%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(89%) contrast(86%);
+}
+
+.mypage .my_coupon_go .right_arrow img.on{
+    filter: invert(12%) sepia(75%) saturate(4504%) hue-rotate(344deg) brightness(116%) contrast(96%);
+}
+
+.mypage .my_coupon_list_wrap{
+    margin-top: calc(100vw* (20/428));
+}
+
+.mypage .my_coupon_list{
+    width:100%;
+    padding: calc(100vw* (20/428));
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw*(3/428)) calc(100vw*(6/428)) rgba(0, 0, 0, 0.16);
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    cursor: pointer;
+    border:1px solid #fff;
+    box-sizing: border-box;
+}
+
+.mypage .my_coupon_list.on{
+    border:1px solid #CC1219;
+}
+
+.mypage .my_coupon_list:not(:last-child){
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.mypage .my_coupon_text > p{
+    margin-bottom: calc(100vw* (12/428));
+}
+
+.mypage .my_coupon_text > span{
+    font-size: calc(100vw* (14/428));
+    color:#acacac;
+}
+
+.mypage .my_coupon_point{
+    display:flex;
+    align-items: center;
+}
+
+.mypage .my_coupon_point span{
+    font-size: calc(100vw* (20/428));
+    margin-right: calc(100vw* (4/428));
+    font-weight:700;
+    color:#CC1219;
+}
+
+.mypage .my_coupon_point p{
+    font-size: calc(100vw* (20/428));
+    font-weight:700;
+}
+
+.mypage .list_opacity{
+    opacity: 0.4;
+}
+
+/* 선물 */
+.mypage .my_coupon_text .event_tag{
+    color:#214BFF;
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    margin-left: calc(100vw* (10/428));
+}
+
+.mypage .present_text{
+    color:#214BFF;
+}
+
+/* 이벤트 */
+.mypage .my_event_text{
+    padding: calc(100vw* (20/428)) 0;
+    border-bottom:1px solid #eee;
+}
+
+.mypage .my_event_text p{
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+    margin-bottom: calc(100vw* (10/428));
+}
+
+.mypage .my_event_text span{
+    font-size: calc(100vw* (14/428));
+    font-weight:500;
+    color:#acacac;
+}
+
+.mypage .my_event_text .ac{
+    color:#acacac;
+}
+
+.mypage .my_event_product{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    border-radius: calc(100vw* (10/428));
+    min-height: calc(100vw* (730/428));
+}
+
+/* 게임설정 */
+.mygameset .my_game_set_wrap{
+    padding: calc(100vw* (20/428));
+    background:#fff;
+    border-radius:  calc(100vw* (10/428));
+    box-shadow:0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.mygameset .select_wrap{
+    margin-bottom: calc(100vw* (20/428));
+    box-shadow:0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);   
+}
+
+.mygameset .select_wrap:last-child{
+    margin-bottom: calc(100vw* (30/428));
+}
+
+.mygameset .my_select_text{
+    font-size: calc(100vw* (15/428));
+    font-weight:400;
+    line-height: 1.6;
+    position:relative;
+    padding-bottom: calc(100vw* (40/428));
+}
+
+.mygameset .my_select_text::after{
+    position:absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height:1px;
+    background:#eee;
+    left: calc(100vw* (-20/428));
+    bottom:0;
+}
+
+.mygameset .btn{
+    margin-top: calc(100vw* (20/428));
+}
+
+/* 개인정보 수정 */
+.end_btn{
+    display:flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.end_btn p{
+    font-size: calc(100vw* (14/428));
+    font-weight:400;
+}
+
+.end_btn .end_img{
+    width: calc(100vw* (16/428));
+    height: calc(100vw* (16/428));
+}
+
+.mypage .signUp_btn{
+    margin-top: calc(100vw* (10/428));
+}
+
+.signUp_page .input_wrap.mail_part{
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.signUp_page.bg_gray{
+    padding-bottom: calc(100vw* (80/428));
+}
+
+.modal_bg.retouch_clear .small_text{
+    color:#cc1219;
+    margin-top: calc(100vw* (20/428));
+}
+
+.modal_bg.coupon_modal1 .small_text{
+    color:#cc1219;
+    margin-top: calc(100vw* (20/428));
+}
+
+.medal_modal .medal_area{
+    padding: calc(100vw* (40/428));
+    text-align: center;
+}
+
+.medal_modal .medal_area > h2{
+    font-size: calc(100vw* (20/428));
+    font-weight:500;
+    margin-bottom: calc(100vw* (30/428));
+}
+
+.medal_modal .bronze_box{
+    display:flex;
+    align-items: center;
+}
+
+.medal_modal .medal_cont{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.medal_modal .medal_cont:not(:last-child){
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.medal_modal .bronze_box span{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    color:#acacac;
+}
+
+.medal_modal .bronze_icon{
+    width: calc(100vw* (40/428));
+    height: calc(100vw* (40/428));
+    margin-right: calc(100vw* (20/428));
+}
+
+.mypage.even_wrap{
+    padding-top:0;
+}
+
+.mypage .numCheck_btn{
+    opacity: 0.5;
+}
+
+.mypage .modal_bg .message_modal{
+    height:auto;
+}

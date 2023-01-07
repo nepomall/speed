@@ -1,0 +1,950 @@
+/* 예약하기(매장찾기) 페이지---------------------------------------------------------------------*/
+/* 예약하기(매장찾기) 페이지---------------------------------------------------------------------*/
+.rez_find_page .history_section,
+.rez_fav_page .history_section{
+    padding-top: calc(100vw* (20/428));
+}
+
+.rez_find_page .history_wrap,
+.rez_fav_page .history_wrap{
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_find_page .history_wrap .title,
+.rez_fav_page .history_wrap .title{
+    font-size: calc(100vw* (16/428));
+    font-weight: 700;
+    margin-bottom: calc(100vw* (10/428));
+}
+
+.rez_find_page .history_wrap .empty_box,
+.rez_fav_page .history_wrap .empty_box{
+    padding: calc(100vw*(130/428)) 0 calc(100vw* (180/428));
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+    text-align: center;
+    font-weight: 500;
+}
+
+.rez_find_page .history_wrap .empty_box,
+.rez_fav_page .history_wrap .empty_box{
+    display: none;
+}
+
+.rez_find_page .store_list,
+.rez_fav_page .store_list{
+    max-height: calc(100vw* (560/428));
+    padding: calc(100vw* (5/428)) calc(100vw* (5/428)) calc(100vw* (10/428));
+    overflow: auto;
+}
+
+.rez_find_page .store_list::-webkit-scrollbar,
+.rez_fav_page .store_list::-webkit-scrollbar{
+    display: none;
+}
+
+.rez_find_page .store_list .list,
+.rez_fav_page .store_list .list{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: calc(100vw*(10/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    padding: calc(100vw*(25/428)) calc(100vw*(20/428));
+}
+
+.rez_find_page .store_list .list:not(:last-child),
+.rez_fav_page .store_list .list:not(:last-child){
+    margin-bottom: calc(100vw*(20/428));
+}
+
+.rez_find_page .store_list .store_name,
+.rez_fav_page .store_list .store_name{
+    font-size: calc(100vw*(15/428));
+    margin-bottom: calc(100vw*(10/428));
+    font-weight: 500;
+}
+
+.rez_find_page .store_list .store_location,
+.rez_fav_page .store_list .store_location{
+    font-size: calc(100vw*(14/428));
+    color: #444;
+    margin-bottom: calc(100vw*(10/428));
+    font-weight: 400;
+}
+
+.rez_find_page .store_list .contect_num,
+.rez_fav_page .store_list .contect_num{
+    font-size: calc(100vw*(14/428));
+    color: #acacac;
+    padding-left: calc(100vw*(25/428));
+    font-weight: 400;
+    position: relative;
+}
+
+.rez_find_page .store_list .contect_num::after,
+.rez_fav_page .store_list .contect_num::after{
+    width: calc(100vw*(15/428));
+    height: calc(100vw*(15/428));
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    background: url(../img/common/icon_phone.svg) no-repeat center center / cover;
+}
+
+.rez_find_page .store_list .store_name,
+.rez_find_page .store_list .store_location,
+.rez_find_page .store_list .contect_num,
+.rez_fav_page .store_list .store_name,
+.rez_fav_page .store_list .store_location,
+.rez_fav_page .store_list .contect_num{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: calc(100vw*(250/428));
+}
+
+.rez_find_page .store_list .right_box,
+.rez_fav_page .store_list .right_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.rez_find_page .store_list .fav_icon{
+    width: calc(100vw*(16/428));
+    height: calc(100vw*(16/428));
+    margin-top: calc(100vw*(-10/428));
+    background: url(../img/common/star_empty.svg) no-repeat center center / cover;
+}
+
+.rez_fav_page .store_list .fav_icon{
+    width: calc(100vw*(16/428));
+    height: calc(100vw*(16/428));
+    margin-top: calc(100vw*(-10/428));
+    background: url(../img/common/star.svg) no-repeat center center / cover;
+}
+
+.rez_find_page .store_list .fav_icon.active{
+    background: url(../img/common/star.svg) no-repeat center center / cover;
+}
+
+.rez_find_page .store_list .rez_btn,
+.rez_fav_page .store_list .rez_btn{
+    width: calc(100vw*(76/428));
+    height: calc(100vw*(34/428));
+    background: #fff;
+    border-radius: calc(100vw*(8/428));
+    font-size: calc(100vw*(14/428));
+    color: #CC1219;
+    border: 1px solid #CC1219;
+    font-weight: 500;
+}
+
+.rez_find_page .store_list .rez_btn.rezing,
+.rez_fav_page .store_list .rez_btn.rezing{
+    color: #fff;
+    background: #CC1219;
+}
+
+.rez_find_page .event_banner,
+.rez_fav_page .event_banner {
+    margin-top: calc(100vw*(40/428));
+}
+
+.rez_fav_page .favDelete_modal .big_text{
+    color: #CC1219;
+    margin-bottom: calc(100vw*(20/428));
+}
+
+
+/* 예약하기페이지---------------------------------------------------------------------*/
+/* 예약하기페이지---------------------------------------------------------------------*/
+.rez_page .rez_section,
+.rez_page .change_section{
+    padding-top: calc(100vw* (10/428));
+}
+
+/* 타석선택------------------- */
+.rez_page .sit_wrap{
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_page .sit_wrap .title{
+    font-size: calc(100vw* (16/428));
+    font-weight: 700;
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.rez_page .sit_wrap .sit_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rez_page .sit_wrap .sit_list .list{
+    width: calc(100vw* (87/428));
+    height: calc(100vw* (40/428));
+    border-radius: calc(100vw* (8/428));
+    font-size: calc(100vw* (15/428));
+    font-weight: 500;
+    line-height: calc(100vw* (40/428));
+    text-align: center;
+    background: #fff;
+    color: #acacac;
+    border: 1px solid #acacac;
+}
+
+.rez_page .sit_wrap .sit_list .list.active{
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.rez_page .sit_wrap .sit_list .list:nth-child(1),
+.rez_page .sit_wrap .sit_list .list:nth-child(2),
+.rez_page .sit_wrap .sit_list .list:nth-child(3),
+.rez_page .sit_wrap .sit_list .list:nth-child(4){
+    margin-bottom: calc(100vw* (10/428));
+}
+
+/* 시간선택------------------ */
+.rez_page .time_wrap{
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_page .time_wrap .title_wrap,
+.rez_page .time_wrap .situation,
+.rez_page .time_wrap .situation .list{
+    display: flex;
+    align-items: center;
+    height: calc(100vw* (18/428));
+}
+
+.rez_page .time_wrap .situation .list:not(:last-child){
+    margin-right: calc(100vw* (12/428));
+}
+
+.rez_page .time_wrap .title_wrap{
+    margin-bottom: calc(100vw* (20/428));
+    position: relative;
+}
+
+.rez_page .time_wrap .title_wrap::after{
+    content: '*1칸=10분';
+    display: block;
+    position: absolute;
+    font-size: calc(100vw* (13/428));
+    font-weight: 400;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.rez_page .time_wrap .title{
+    font-size: calc(100vw* (16/428));
+    font-weight: 700;
+    margin-right: calc(100vw* (13/428));
+}
+
+.rez_page .time_wrap .color_box{
+    width: calc(100vw* (16/428));
+    height: calc(100vw* (16/428));
+    margin-right: calc(100vw* (4/428));
+    border-radius: calc(100vw* (4/428));
+}
+
+.rez_page .time_wrap .color_box.pink{
+    background: #f4c2c5;
+}
+
+.rez_page .time_wrap .color_box.skyblue{
+    background: #b4beec;
+}
+
+.rez_page .time_wrap .color_box.white{
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.rez_page .time_wrap .situation .text{
+    font-size: calc(100vw* (13/428));
+    font-weight: 500;
+    color: #acacac;
+}
+
+.rez_page .time_bar:not(:last-child){
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.rez_page .time_bar .text_area,
+.rez_page .time_bar .depth{
+    display: flex;
+}
+
+.rez_page .time_bar .depth{
+    width: 100%;
+    height: calc(100vw* (44/428));
+    border-radius: calc(100vw* (8/428));
+    margin-top: calc(100vw* (4/428));
+    border: 1px solid #acacac;
+    overflow: hidden;
+}
+
+.rez_page .time_bar .list{
+    width: calc(100vw* (31.5/428));
+    height: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.rez_page .time_bar .list::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: calc(100vw* (10/428));
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background: #acacac;
+}
+
+.rez_page .time_bar .list.long::after{
+    height: calc(100vw* (20/428));
+}
+
+.rez_page .time_bar .list:last-child::after{
+    display: none;
+}
+
+.rez_page .time_bar .text_area p{
+    color: #acacac;
+    font-size: calc(100vw* (13/428));
+    font-weight: 500;
+}
+
+.rez_page .time_bar .text_area p:nth-child(2){
+    margin-left: calc(100vw* (162/428));
+}
+
+.rez_page .time_bar .list.checked{
+    background: #f4c2c5;
+}
+
+.rez_page .time_bar .list.impossible{
+    background: #b4beec;
+}
+
+/* .rez_page .time_bar .list.possible{
+    background: #fff;
+} */
+
+/* 슬라이드 */
+.rez_page .swiper-slide{
+    padding-bottom: calc(100vw* (40/428));
+}
+
+.rez_page .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #CC1219;
+}
+
+.rez_page .swiper-pagination-bullet{
+    width: calc(100vw* (8/428));
+    height: calc(100vw* (8/428));
+}
+
+/* 예약하기 */
+.rez_page .last_step{
+    margin-top: calc(100vw* (10/428));
+}
+
+.rez_page .last_step .check_info{
+    width: 100%;
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    border-radius: calc(100vw* (10/428));
+}
+
+.rez_page .last_step .time_checked{
+    display: none;
+    padding: calc(100vw* (15/428)) calc(100vw* (20/428));
+}
+
+.rez_page .change_section .last_step .time_checked{
+    display: block;
+}
+
+.rez_page .last_step .no_check{
+    padding: calc(100vw* (45/428)) 0 calc(100vw* (40/428));
+    font-size: calc(100vw* (13/428));
+    font-weight: 400;
+    text-align: center;
+    color: #acacac;
+}
+
+.rez_page .change_section .last_step .no_check{
+    display: none;
+}
+
+.rez_page .last_step span{
+    font-size: calc(100vw* (12/428));
+    font-weight: 500;
+}
+
+.rez_page .last_step .chose_time{
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+    margin: calc(100vw* (10/428)) 0;
+}
+
+.rez_page .last_step .chose_time span{
+    font-size: calc(100vw* (16/428));
+    font-weight: 700;
+    color: #CC1219;
+}
+
+.rez_page .last_step strong{
+    font-size: calc(100vw* (13/428));
+    font-weight: 400;
+    color: #acacac;
+}
+
+.rez_page .last_step .b{
+    font-size: calc(100vw* (13/428));
+    font-weight: 400;
+    color: #acacac;
+    text-align: center;
+}
+
+.rez_page .last_step .rez_btn{
+    margin-top: calc(100vw* (30/428));
+    width: 100%;
+    height: calc(100vw* (44/428));
+    border-radius: calc(100vw* (10/428));
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+    background: #CC1219;
+    color: #fff;
+}
+
+.rez_page .last_step .button_wrap{
+    width: 100%;
+    margin-top: calc(100vw* (30/428));
+    display: flex;
+    justify-content: space-between;
+}
+
+.rez_page .last_step .button_wrap button{
+    width: calc(100vw* (184/428));
+    height: calc(100vw* (44/428));
+    border-radius: calc(100vw* (8/428));
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+}
+
+.rez_page .last_step .extension_btn{
+    color: #CC1219;
+    border: 1px solid #CC1219;
+}
+
+.rez_page .last_step .change_btn{
+    color: #fff;
+    background: #CC1219;
+}
+
+.rez_page .last_step .active_btn:disabled{
+    color: #fff;
+    background: #f4ced0;
+    border: none;
+}
+
+/* 예약하기 결제페이지-------------------------------------------------------------------*/
+/* 예약하기 결제페이지-------------------------------------------------------------------*/
+.rez_pay_page .charging_small_btn{
+    background:#fff;
+    color:#CC1219;
+}
+
+.rez_pay_page .point_content{
+    padding: calc(100vw* (14/428)) 0 calc(100vw* (24/428));
+}
+
+.rez_pay_page .info_area{
+    padding:calc(100vw* (40/428)) calc(100vw* (20/428)) calc(100vw* (20/428));
+    background:#fff;
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.rez_pay_page .info_profil_img{
+    width:calc(100vw* (86/428));
+    height: calc(100vw* (86/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: calc(100vw* (40/428));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rez_pay_page .info_profil_img img{
+    width: calc(100vw* (38/428));
+    height: calc(100vw* (34/428));
+}
+
+.rez_pay_page .info_icon_box{
+    display: flex;
+    align-items: center;
+    height: calc(100vw* (34/428));
+}
+
+.rez_pay_page .info_one_section > span{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    color:#acacac;
+    margin-bottom: calc(100vw* (12/428));
+    display: block;
+}
+
+.rez_pay_page .info_icon_box p{
+    font-size: calc(100vw* (15/428));
+    font-weight:500;
+    margin-right: calc(100vw* (20/428));
+}
+
+.rez_pay_page .info_icon{
+    width: calc(100vw* (34/428));
+    height: calc(100vw* (34/428));;
+    border-radius: calc(100vw* (100/428));
+    box-shadow:0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.rez_pay_page .info_icon{
+    margin-right: calc(100vw* (20/428));
+}
+
+.rez_pay_page .info_sit{
+    display:flex;
+    align-items: center;
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_pay_page .info_sit p{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    margin-right: calc(100vw* (10/428));
+    color:#444;
+}
+
+.rez_pay_page .info_sit span{
+    font-size: calc(100vw* (16/428));
+    font-weight:700;
+    margin-right: calc(100vw* (10/428));
+    color:#CC1219;
+}
+
+.rez_pay_page .info_one_section{
+    padding-bottom: calc(100vw* (20/428));
+    position: relative;
+}
+
+.rez_pay_page .info_one_section::after{
+    position:absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height: 1px;
+    left: calc(100vw* (-20/428));
+    bottom:0;
+    background:#eee;
+}
+
+.rez_pay_page .info_two_section{
+    padding: calc(100vw* (30/428)) 0;
+    position: relative;
+}
+
+.rez_pay_page .info_two_section::after{
+    position:absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height:1px;
+    background:#eee;
+    left: calc(100vw* (-20/428));
+    bottom:0; 
+}
+
+.rez_pay_page .info_point{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.rez_pay_page .info_point p{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+}
+
+.rez_pay_page .info_point span{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+}
+
+.rez_pay_page .info_point .minus{
+    color:#CC1219;
+}
+
+.rez_pay_page .info_point_input{
+    display:flex;
+    align-items: center;
+}
+
+.rez_pay_page .info_point_input .chk_wrap{
+    margin-right: calc(100vw* (10/428));
+}
+
+.rez_pay_page .have_point{
+    display:flex;
+    align-items: center;
+}
+
+.rez_pay_page .have_point p{
+    font-size: calc(100vw* (14/428));
+    font-weight:400;
+    color:#acacac;
+    margin-right: calc(100vw* (8/428));
+}
+
+.rez_pay_page .have_point span{
+    font-size: calc(100vw* (14/428));
+    font-weight:500;
+}
+
+.rez_pay_page .info_point_input .chk_wrap label{
+    margin-left: calc(100vw* (10/428));
+}
+
+.rez_pay_page .point_input{
+    width:100%;
+    border-bottom: 0;
+    border:1px solid #eee;
+    height: calc(100vw* (40/428));
+    border-radius: calc(100vw* (8/428));
+    padding: 0 calc(100vw* (20/428));
+    margin-top: calc(100vw* (10/428));
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    color: #444;
+}
+
+.rez_pay_page input::placeholder,
+.rez_pay_page input:disabled{
+    font-size: calc(100vw* (16/428));
+    color: #eee;
+    font-weight: 500;
+}
+
+.rez_pay_page .info_input{
+    position: relative;
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.rez_pay_page .info_input input{
+    padding-right: calc(100vw* (80/428));
+}
+
+.rez_pay_page .input_btn{
+    position:absolute;
+    content:'';
+    right: calc(100vw* (10/428));
+    top: calc(100vw* (10/428));
+    font-size: calc(100vw* (14/428));
+    font-weight:500;
+    color:#acacac;
+    height: calc(100vw* (40/428));
+    width: calc(100vw* (70/428));
+}
+
+.rez_pay_page .input_btn:disabled{
+    color:#eee;
+}
+
+.rez_pay_page .left_point{
+    color:#214BFF;
+}
+
+.rez_pay_page .info_text_box span{
+    font-size: calc(100vw* (14/428));
+    font-weight:500;
+    line-height: 1.8;
+    margin-bottom: calc(100vw* (30/428));
+    color: #acacac;
+    display:block;
+}
+
+.rez_pay_page .info_text_box p{
+    font-size: calc(100vw* (14/428));
+    font-weight:500;
+    color: #acacac;
+}
+
+
+.rez_pay_page .info_three_section{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: calc(100vw* (30/428));
+}
+
+.rez_pay_page .info_three_section .chk_wrap label{
+    margin-left: calc(100vw* (20/428));
+    font-size: calc(100vw* (14/428));
+    font-weight:400;
+}
+
+.rez_pay_page .info_three_section .button_wrap{
+    width: calc(100vw* (338/428));
+    margin-top: calc(100vw* (30/428));
+    display: flex;
+    justify-content: space-between;
+}
+
+.rez_pay_page .info_three_section button{
+    height: calc(100vw* (44/428));
+    width: calc(100vw* (164/428));
+    border-radius: calc(100vw* (8/428));
+    font-size: calc(100vw* (16/428));
+    font-weight: 500;
+}
+
+.rez_pay_page .info_three_section .cancel_btn{
+    background: #fff;
+    color: #CC1219;
+    border: 1px solid #CC1219;
+}
+
+.rez_pay_page .info_three_section .rez_btn{
+    background: #CC1219;
+    color: #fff;
+}
+
+.rez_pay_page .info_three_section .rez_btn:disabled{
+    color: #fff;
+    background: #f4ced0;
+}
+
+.rez_pay_page .warning{
+    font-size: calc(100vw* (16/428));
+    margin-top: calc(100vw* (40/428));
+    font-weight: 500;
+    color: #CC1219;
+}
+
+/* 모달 */
+.rez_pay_page .rezCancel_modal .small_text,
+.rez_pay_page .rezComplete_modal .small_text{
+    margin-top: calc(100vw* (20/428));
+    color: #CC1219;
+    font-size: calc(100vw* (15/428));
+    font-weight: 500;
+}
+
+.rez_pay_page .rezComplete_modal .small_text{
+    color: #000;
+}
+
+/* 예약완료 페이지-------------------------------------------------------------------*/
+/* 예약완료 페이지-------------------------------------------------------------------*/
+.rez_complete_page .complete_section{
+    padding-top: calc(100vw* (20/428));
+}
+
+.rez_complete_page .info_area{
+    padding:calc(100vw* (40/428)) calc(100vw* (20/428)) calc(100vw* (20/428));
+    background:#fff;
+    border-radius: calc(100vw* (10/428));
+    box-shadow:0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.rez_complete_page .info_profil_img{
+    width:calc(100vw* (86/428));
+    height: calc(100vw* (86/428));
+    box-shadow: 0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: calc(100vw* (40/428));
+}
+
+.rez_complete_page .info_icon_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vw* (34/428));
+}
+
+.rez_complete_page .info_one_section > span{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    color:#acacac;
+    margin-bottom: calc(100vw* (12/428));
+    display: block;
+}
+
+.rez_complete_page .info_icon_box p{
+    font-size: calc(100vw* (15/428));
+    font-weight:500;
+    margin-right: calc(100vw* (20/428));
+}
+
+.rez_complete_page .info_icon{
+    width: calc(100vw* (34/428));
+    height: calc(100vw* (34/428));;
+    border-radius: calc(100vw* (100/428));
+    box-shadow:0 calc(100vw* (3/428)) calc(100vw* (6/428)) rgba(0, 0, 0, 0.16);
+}
+
+.rez_complete_page .info_icon:first-child{
+    margin-right: calc(100vw* (20/428));
+}
+
+.rez_complete_page .info_sit{
+    display:flex;
+    align-items: center;
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_complete_page .info_sit p{
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+    margin-right: calc(100vw* (10/428));
+    color:#444;
+}
+
+.rez_complete_page .info_sit span{
+    font-size: calc(100vw* (16/428));
+    font-weight:700;
+    margin-right: calc(100vw* (10/428));
+    color:#CC1219;
+}
+
+.rez_complete_page .enter_num{
+    font-size: calc(100vw* (16/428));
+    margin: calc(100vw* (20/428)) 0 calc(100vw* (7/428));
+    font-weight: 500;
+    color: #444;
+}
+
+.rez_complete_page .enter_num span{
+    font-size: calc(100vw* (16/428));
+    font-weight: 700;
+    color: #214BFF;
+}
+
+.rez_complete_page .info_one_section strong{
+    color: #acacac;
+    font-size: calc(100vw* (13/428));
+}
+
+.rez_complete_page .info_one_section{
+    padding-bottom: calc(100vw* (20/428));
+    position: relative;
+}
+
+.rez_complete_page .info_one_section::after{
+    position:absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height: 1px;
+    left: calc(100vw* (-20/428));
+    bottom:0;
+    background:#eee;
+}
+
+.rez_complete_page .info_two_section{
+    padding: calc(100vw* (30/428)) 0;
+    position: relative;
+}
+
+.rez_complete_page .info_two_section::after{
+    position:absolute;
+    content:'';
+    width: calc(100vw* (378/428));
+    height:1px;
+    background:#eee;
+    left: calc(100vw* (-20/428));
+    bottom:0; 
+}
+
+.rez_complete_page .info_two_section .info_point{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rez_complete_page .info_two_section .info_point:not(:last-child){
+    margin-bottom: calc(100vw* (20/428));
+}
+
+.rez_complete_page .info_two_section .minus{
+    color: #CC1219;
+}
+
+.rez_complete_page .info_two_section .left_point{
+    color: #214BFF;
+}
+
+.rez_complete_page .info_area h3{
+    font-size: calc(100vw* (16/428));
+    font-weight:700;
+    text-align: center;
+    margin-bottom: calc(100vw* (34/428));
+}
+
+.rez_complete_page .info_area h3 .plus{
+    color: #214BFF;
+}
+
+.rez_complete_page .info_point:last-child{
+    margin-bottom:0;
+}
+
+.rez_complete_page .btn_group{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: calc(100vw* (20/428));
+}
+
+.rez_complete_page .btn_group button{
+    width: calc(100vw* (164/428));
+    height: calc(100vw* (44/428));
+    border-radius: calc(100vw* (8/428));
+    border: 1px solid #CC1219;
+    font-size: calc(100vw* (16/428));
+    font-weight:500;
+}
+
+.rez_complete_page .complete_section .cancel_btn{
+    color: #CC1219;
+}
+
+.rez_complete_page .complete_section .modify_btn{
+    background:#CC1219;
+    color:#fff;
+}
+
+.rez_complete_page .re_rez_btn{
+    display: none;
+    margin-top: calc(100vw* (20/428));
+}
+
+/* 모달 */
+.rez_complete_page .rezCancel_modal .small_text{
+    margin-top: calc(100vw* (20/428));
+    color: #CC1219;
+    font-size: calc(100vw* (15/428));
+    font-weight: 500;
+}
